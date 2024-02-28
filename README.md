@@ -1,646 +1,608 @@
-<a name="readme-top"></a>
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><div align="center" dir="auto"><a name="user-content-readme-top"></a>
+<p dir="auto"><a href="https://chat-preview.lobehub.com" rel="nofollow"><img src="https://private-user-images.githubusercontent.com/28616219/306135690-9f155dff-4737-429f-9cad-a70a1a860c5f.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDkwODA0ODksIm5iZiI6MTcwOTA4MDE4OSwicGF0aCI6Ii8yODYxNjIxOS8zMDYxMzU2OTAtOWYxNTVkZmYtNDczNy00MjlmLTljYWQtYTcwYTFhODYwYzVmLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAyMjglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMjI4VDAwMjk0OVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWViYmRkMTEzZTE0NWQ4YTU3OTA1NjBhYmIwN2MwYmNjODBhZmE4ZWRmZWMzYzUyNTZlYzI5NGNhM2MzZTZkZjYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.D9MPi32rXF67Nqh2KYcCxyIl5x3kHVAzqRIBkUSTiTs" alt="" secured-asset-link="" style="max-width: 100%;"></a></p>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">波波聊天</font></font></h1><a id="user-content-lobe-chat" class="anchor-element" aria-label="永久链接：Lobe 聊天" href="#lobe-chat"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">一个开源、现代设计的 ChatGPT/LLM UI/框架。</font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+支持语音合成、多模态和可扩展（</font></font><a href="https://platform.openai.com/docs/guides/function-calling" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">函数调用</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）插件系统。</font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+一键</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">免费</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">部署您的私人 ChatGPT/Gemini/Ollama 聊天应用程序。</font></font></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">English</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> · </font></font><a href="/lobehub/lobe-chat/blob/main/README.zh-CN.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">简体中文</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> · </font></font><a href="/lobehub/lobe-chat/blob/main/CHANGELOG.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Changelog</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> · </font></font><a href="https://chat-docs.lobehub.com/en" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Documents</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> · </font></font><a href="https://github.com/lobehub/lobe-chat/issues"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Report Bug</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> · </font></font><a href="https://github.com/lobehub/lobe-chat/issues"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Request Feature</font></font></a></p>
 
-<div align="center">
-
-<img height="120" src="https://registry.npmmirror.com/@lobehub/assets-logo/1.0.0/files/assets/logo-3d.webp">
-<img height="120" src="https://gw.alipayobjects.com/zos/kitchen/qJ3l3EPsdW/split.svg">
-<img height="120" src="https://registry.npmmirror.com/@lobehub/assets-emoji-anim/1.0.0/files/assets/robot.webp">
-
-# Lobe Chat
-
-LobeChat is an open-source, high-performance chatbot framework<br/>that supports speech synthesis, multimodal, and extensible ([Function Call][fc-link]) plugin system. <br/>
-Supports one-click free deployment of your private ChatGPT/LLM web application.
-
-**English** · [简体中文](./README.zh-CN.md) · [Changelog](./CHANGELOG.md) · [Wiki][github-wiki-link] · [Report Bug][github-issues-link] · [Request Feature][github-issues-link]
-
-<!-- SHIELD GROUP -->
-
-[![][github-release-shield]][github-release-link]
-[![][docker-release-shield]][docker-release-link]
-[![][vercel-shield]][vercel-link]
-[![][discord-shield]][discord-link]<br/>
-[![][github-action-test-shield]][github-action-test-link]
-[![][github-action-release-shield]][github-action-release-link]
-[![][github-releasedate-shield]][github-releasedate-link]<br/>
-[![][github-contributors-shield]][github-contributors-link]
-[![][github-forks-shield]][github-forks-link]
-[![][github-stars-shield]][github-stars-link]
-[![][github-issues-shield]][github-issues-link]
-[![][github-license-shield]][github-license-link]<br>
-[![][sponsor-shield]][sponsor-link]
-
-**Share LobeChat Repository**
-
-[![][share-x-shield]][share-x-link]
-[![][share-telegram-shield]][share-telegram-link]
-[![][share-whatsapp-shield]][share-whatsapp-link]
-[![][share-reddit-shield]][share-reddit-link]
-[![][share-weibo-shield]][share-weibo-link]
-
-<sup>Pioneering the new age of thinking and creating. Built for you, the Super Individual.</sup>
-
-![](https://gw.alipayobjects.com/zos/kitchen/RKnWrrfuMl/welcome.webp)
-
+<p dir="auto"><a href="https://github.com/lobehub/lobe-chat/releases"><img src="https://camo.githubusercontent.com/113e8e79a041d4c2d95601b26def41503473c8120792511deed7d5a284204e64/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f762f72656c656173652f6c6f62656875622f6c6f62652d636861743f636f6c6f723d333639656666266c6162656c436f6c6f723d626c61636b266c6f676f3d676974687562267374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/github/v/release/lobehub/lobe-chat?color=369eff&amp;labelColor=black&amp;logo=github&amp;style=flat-square" style="max-width: 100%;"></a>
+<a href="https://hub.docker.com/r/lobehub/lobe-chat" rel="nofollow"><img src="https://camo.githubusercontent.com/7c3bafcf2ea6d169ec34d2f735ef84b8c7ea1451402c4f41f701294b5a330efb/68747470733a2f2f696d672e736869656c64732e696f2f646f636b65722f762f6c6f62656875622f6c6f62652d636861743f636f6c6f723d333639656666266c6162656c3d646f636b6572266c6162656c436f6c6f723d626c61636b266c6f676f3d646f636b6572266c6f676f436f6c6f723d7768697465267374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/docker/v/lobehub/lobe-chat?color=369eff&amp;label=docker&amp;labelColor=black&amp;logo=docker&amp;logoColor=white&amp;style=flat-square" style="max-width: 100%;"></a>
+<a href="https://chat-preview.lobehub.com" rel="nofollow"><img src="https://camo.githubusercontent.com/6ef6faec5cd59346b718b8a1b427c7acd4229227c4322f7d98e7f7a847158567/68747470733a2f2f696d672e736869656c64732e696f2f776562736974653f646f776e5f6d6573736167653d6f66666c696e65266c6162656c3d76657263656c266c6162656c436f6c6f723d626c61636b266c6f676f3d76657263656c267374796c653d666c61742d7371756172652675705f6d6573736167653d6f6e6c696e652675726c3d6874747073253341253246253246636861742d707265766965772e6c6f62656875622e636f6d" alt="" data-canonical-src="https://img.shields.io/website?down_message=offline&amp;label=vercel&amp;labelColor=black&amp;logo=vercel&amp;style=flat-square&amp;up_message=online&amp;url=https%3A%2F%2Fchat-preview.lobehub.com" style="max-width: 100%;"></a>
+<a href="https://discord.gg/AYFPHvv2jT" rel="nofollow"><img src="https://camo.githubusercontent.com/e63d4d3932d424b8641727538d566d3d2dbcd833156c5a2def96003fd2d4f3fe/68747470733a2f2f696d672e736869656c64732e696f2f646973636f72642f313132373137313137333938323135343839333f636f6c6f723d353836354632266c6162656c3d646973636f7264266c6162656c436f6c6f723d626c61636b266c6f676f3d646973636f7264266c6f676f436f6c6f723d7768697465267374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/discord/1127171173982154893?color=5865F2&amp;label=discord&amp;labelColor=black&amp;logo=discord&amp;logoColor=white&amp;style=flat-square" style="max-width: 100%;"></a><br>
+<a href="https://codecov.io/gh/lobehub/lobe-chat" rel="nofollow"><img src="https://camo.githubusercontent.com/3d0a264ae233aed70896b812a93a5c73b2491845cd3c861cd704e396a6b2e41c/68747470733a2f2f696d672e736869656c64732e696f2f636f6465636f762f632f6769746875622f6c6f62656875622f6c6f62652d636861743f6c6162656c436f6c6f723d626c61636b267374796c653d666c61742d737175617265266c6f676f3d636f6465636f76266c6f676f436f6c6f723d7768697465" alt="" data-canonical-src="https://img.shields.io/codecov/c/github/lobehub/lobe-chat?labelColor=black&amp;style=flat-square&amp;logo=codecov&amp;logoColor=white" style="max-width: 100%;"></a>
+<a href="https://github.com/actions/workflows/lobehub/lobe-chat/test.yml"><img src="https://camo.githubusercontent.com/7d0c40f80024af755ee0e08b88dbeda327197b2fe6bbaf76d5c434d926037fa8/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f616374696f6e732f776f726b666c6f772f7374617475732f6c6f62656875622f6c6f62652d636861742f746573742e796d6c3f6c6162656c3d74657374266c6162656c436f6c6f723d626c61636b266c6f676f3d676974687562616374696f6e73266c6f676f436f6c6f723d7768697465267374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/github/actions/workflow/status/lobehub/lobe-chat/test.yml?label=test&amp;labelColor=black&amp;logo=githubactions&amp;logoColor=white&amp;style=flat-square" style="max-width: 100%;"></a>
+<a href="https://github.com/actions/workflows/lobehub/lobe-chat/release.yml"><img src="https://camo.githubusercontent.com/0e61e4d6240e34e190cae737df130fbb97ae88e9ded8719844fa293d30624718/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f616374696f6e732f776f726b666c6f772f7374617475732f6c6f62656875622f6c6f62652d636861742f72656c656173652e796d6c3f6c6162656c3d72656c65617365266c6162656c436f6c6f723d626c61636b266c6f676f3d676974687562616374696f6e73266c6f676f436f6c6f723d7768697465267374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/github/actions/workflow/status/lobehub/lobe-chat/release.yml?label=release&amp;labelColor=black&amp;logo=githubactions&amp;logoColor=white&amp;style=flat-square" style="max-width: 100%;"></a>
+<a href="https://github.com/lobehub/lobe-chat/releases"><img src="https://camo.githubusercontent.com/7a7716f0484748a0d457f0e862d433c1ec1a5f49a2d180ad0352c8f53f8a308d/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f72656c656173652d646174652f6c6f62656875622f6c6f62652d636861743f6c6162656c436f6c6f723d626c61636b267374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/github/release-date/lobehub/lobe-chat?labelColor=black&amp;style=flat-square" style="max-width: 100%;"></a><br>
+<a href="https://github.com/lobehub/lobe-chat/graphs/contributors"><img src="https://camo.githubusercontent.com/5f6915f543141a51e82d4d7fdd94660d2c89810750321737d5806951523e1a7d/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f636f6e7472696275746f72732f6c6f62656875622f6c6f62652d636861743f636f6c6f723d633466303432266c6162656c436f6c6f723d626c61636b267374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/github/contributors/lobehub/lobe-chat?color=c4f042&amp;labelColor=black&amp;style=flat-square" style="max-width: 100%;"></a>
+<a href="https://github.com/lobehub/lobe-chat/network/members"><img src="https://camo.githubusercontent.com/b6bbd8020df59a3692313ca6e9069eee6e86000edc4702a571fdd7c764a59b3c/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f666f726b732f6c6f62656875622f6c6f62652d636861743f636f6c6f723d386165386666266c6162656c436f6c6f723d626c61636b267374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/github/forks/lobehub/lobe-chat?color=8ae8ff&amp;labelColor=black&amp;style=flat-square" style="max-width: 100%;"></a>
+<a href="https://github.com/lobehub/lobe-chat/network/stargazers"><img src="https://camo.githubusercontent.com/ead57e4339b042e00c4196fac9dae1ef639448a3e414d4442b4fce403e12975d/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f6c6f62656875622f6c6f62652d636861743f636f6c6f723d666663623437266c6162656c436f6c6f723d626c61636b267374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/github/stars/lobehub/lobe-chat?color=ffcb47&amp;labelColor=black&amp;style=flat-square" style="max-width: 100%;"></a>
+<a href="https://github.com/lobehub/lobe-chat/issues"><img src="https://camo.githubusercontent.com/96bfa928b66b06966346ed7a378efda669094401fca8737758c883767cdacd08/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6973737565732f6c6f62656875622f6c6f62652d636861743f636f6c6f723d666638306562266c6162656c436f6c6f723d626c61636b267374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/github/issues/lobehub/lobe-chat?color=ff80eb&amp;labelColor=black&amp;style=flat-square" style="max-width: 100%;"></a>
+<a href="https://github.com/lobehub/lobe-chat/blob/main/LICENSE"><img src="https://camo.githubusercontent.com/90a48544f43eebc88d147747aac683d51d4ad43b915461a4a8add68cbc4241b2/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6963656e73652f6c6f62656875622f6c6f62652d636861743f636f6c6f723d7768697465266c6162656c436f6c6f723d626c61636b267374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/github/license/lobehub/lobe-chat?color=white&amp;labelColor=black&amp;style=flat-square" style="max-width: 100%;"></a><br>
+<a href="https://opencollective.com/lobehub" title="成为 ❤️ LobeHub 赞助商" rel="nofollow"><img src="https://camo.githubusercontent.com/86e0dd3ed124956b2b676fe5ce493badada547eabe415a5254e65d7953e3f8cc/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d53706f6e736f722532304c6f62654875622d6630346638383f6c6f676f3d6f70656e636f6c6c656374697665266c6f676f436f6c6f723d7768697465267374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/badge/-Sponsor%20LobeHub-f04f88?logo=opencollective&amp;logoColor=white&amp;style=flat-square" style="max-width: 100%;"></a></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">共享 LobeChat 存储库</font></font></strong></p>
+<p dir="auto"><a href="https://x.com/intent/tweet?hashtags=chatbot%2CchatGPT%2CopenAI&amp;text=Check%20this%20GitHub%20repository%20out%20%F0%9F%A4%AF%20LobeChat%20-%20An%20open-source%2C%20extensible%20%28Function%20Calling%29%2C%20high-performance%20chatbot%20framework.%20It%20supports%20one-click%20free%20deployment%20of%20your%20private%20ChatGPT%2FLLM%20web%20application.&amp;url=https%3A%2F%2Fgithub.com%2Flobehub%2Flobe-chat" rel="nofollow"><img src="https://camo.githubusercontent.com/975b23a785273bc799c4a94eb78046995edb4f00a7cbcc8bdb6a9e632398257d/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d73686172652532306f6e253230782d626c61636b3f6c6162656c436f6c6f723d626c61636b266c6f676f3d78266c6f676f436f6c6f723d7768697465267374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/badge/-share%20on%20x-black?labelColor=black&amp;logo=x&amp;logoColor=white&amp;style=flat-square" style="max-width: 100%;"></a>
+<a href="https://t.me/share/url%22?text=Check%20this%20GitHub%20repository%20out%20%F0%9F%A4%AF%20LobeChat%20-%20An%20open-source%2C%20extensible%20%28Function%20Calling%29%2C%20high-performance%20chatbot%20framework.%20It%20supports%20one-click%20free%20deployment%20of%20your%20private%20ChatGPT%2FLLM%20web%20application.%20%23chatbot%20%23chatGPT%20%23openAI&amp;url=https%3A%2F%2Fgithub.com%2Flobehub%2Flobe-chat" rel="nofollow"><img src="https://camo.githubusercontent.com/d037f43be07ad98250026b185589286d2c74d5a576b88aabebab34488e50f74b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d73686172652532306f6e25323074656c656772616d2d626c61636b3f6c6162656c436f6c6f723d626c61636b266c6f676f3d74656c656772616d266c6f676f436f6c6f723d7768697465267374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/badge/-share%20on%20telegram-black?labelColor=black&amp;logo=telegram&amp;logoColor=white&amp;style=flat-square" style="max-width: 100%;"></a>
+<a href="https://api.whatsapp.com/send?text=Check%20this%20GitHub%20repository%20out%20%F0%9F%A4%AF%20LobeChat%20-%20An%20open-source%2C%20extensible%20%28Function%20Calling%29%2C%20high-performance%20chatbot%20framework.%20It%20supports%20one-click%20free%20deployment%20of%20your%20private%20ChatGPT%2FLLM%20web%20application.%20https%3A%2F%2Fgithub.com%2Flobehub%2Flobe-chat%20%23chatbot%20%23chatGPT%20%23openAI" rel="nofollow"><img src="https://camo.githubusercontent.com/3a3bb5a51f35f5783bbba23fa02156e01c0de59706a58d2bddb08690b1a75f11/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d73686172652532306f6e25323077686174736170702d626c61636b3f6c6162656c436f6c6f723d626c61636b266c6f676f3d7768617473617070266c6f676f436f6c6f723d7768697465267374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/badge/-share%20on%20whatsapp-black?labelColor=black&amp;logo=whatsapp&amp;logoColor=white&amp;style=flat-square" style="max-width: 100%;"></a>
+<a href="https://www.reddit.com/submit?title=Check%20this%20GitHub%20repository%20out%20%F0%9F%A4%AF%20LobeChat%20-%20An%20open-source%2C%20extensible%20%28Function%20Calling%29%2C%20high-performance%20chatbot%20framework.%20It%20supports%20one-click%20free%20deployment%20of%20your%20private%20ChatGPT%2FLLM%20web%20application.%20%23chatbot%20%23chatGPT%20%23openAI&amp;url=https%3A%2F%2Fgithub.com%2Flobehub%2Flobe-chat" rel="nofollow"><img src="https://camo.githubusercontent.com/2a29cfc2aefa09b3cbc45f437f74a23ad2da33d4a5969f44e3f0a30bb933221b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d73686172652532306f6e2532307265646469742d626c61636b3f6c6162656c436f6c6f723d626c61636b266c6f676f3d726564646974266c6f676f436f6c6f723d7768697465267374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/badge/-share%20on%20reddit-black?labelColor=black&amp;logo=reddit&amp;logoColor=white&amp;style=flat-square" style="max-width: 100%;"></a>
+<a href="http://service.weibo.com/share/share.php?sharesource=weibo&amp;title=Check%20this%20GitHub%20repository%20out%20%F0%9F%A4%AF%20LobeChat%20-%20An%20open-source%2C%20extensible%20%28Function%20Calling%29%2C%20high-performance%20chatbot%20framework.%20It%20supports%20one-click%20free%20deployment%20of%20your%20private%20ChatGPT%2FLLM%20web%20application.%20%23chatbot%20%23chatGPT%20%23openAI&amp;url=https%3A%2F%2Fgithub.com%2Flobehub%2Flobe-chat" rel="nofollow"><img src="https://camo.githubusercontent.com/ed3fd8704475ebf16a0ea1f3903157b71452cf79623ff537c385c92fcdd19d3d/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d73686172652532306f6e253230776569626f2d626c61636b3f6c6162656c436f6c6f723d626c61636b266c6f676f3d73696e61776569626f266c6f676f436f6c6f723d7768697465267374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/badge/-share%20on%20weibo-black?labelColor=black&amp;logo=sinaweibo&amp;logoColor=white&amp;style=flat-square" style="max-width: 100%;"></a>
+<a href="https://mastodon.social/share?text=Check%20this%20GitHub%20repository%20out%20%F0%9F%A4%AF%20LobeChat%20-%20An%20open-source,%20extensible%20(Function%20Calling),%20high-performance%20chatbot%20framework.%20It%20supports%20one-click%20free%20deployment%20of%20your%20private%20ChatGPT/LLM%20web%20application.%20https://github.com/lobehub/lobe-chat%20#chatbot%20#chatGPT%20#openAI" rel="nofollow"><img src="https://camo.githubusercontent.com/4e23e31e6f23da7b57fd659a893d06650ed767db2a6263bf391e7eea8a75b8fa/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d73686172652532306f6e2532306d6173746f646f6e2d626c61636b3f6c6162656c436f6c6f723d626c61636b266c6f676f3d6d6173746f646f6e266c6f676f436f6c6f723d7768697465267374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/badge/-share%20on%20mastodon-black?labelColor=black&amp;logo=mastodon&amp;logoColor=white&amp;style=flat-square" style="max-width: 100%;"></a>
+<a href="https://linkedin.com/feed" rel="nofollow"><img src="https://camo.githubusercontent.com/5f9318e531357e7d19838b495ba9316cda145aa914bca59c5ac02371d83b28ec/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d73686172652532306f6e2532306c696e6b6564696e2d626c61636b3f6c6162656c436f6c6f723d626c61636b266c6f676f3d6c696e6b6564696e266c6f676f436f6c6f723d7768697465267374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/badge/-share%20on%20linkedin-black?labelColor=black&amp;logo=linkedin&amp;logoColor=white&amp;style=flat-square" style="max-width: 100%;"></a></p>
+<p dir="auto"><sup><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开创思考和创造的新时代。</font><font style="vertical-align: inherit;">专为超级个人而打造。</font></font></sup></p>
+<p dir="auto"><a href="https://trendshift.io/repositories/2256" rel="nofollow"><img src="https://camo.githubusercontent.com/0aaed7c41cb600785959a8f28ab2286baa48f7c4e3eaa968aaddd75fa99e984b/68747470733a2f2f7472656e6473686966742e696f2f6170692f62616467652f7265706f7369746f726965732f32323536" alt="" data-canonical-src="https://trendshift.io/api/badge/repositories/2256" style="max-width: 100%;"></a></p>
+<p dir="auto"><a href="https://chat-preview.lobehub.com" rel="nofollow"><img src="https://private-user-images.githubusercontent.com/28616219/306148355-8b04c3c9-3d71-4fb4-bd9b-a4f415c5876d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDkwODA0ODksIm5iZiI6MTcwOTA4MDE4OSwicGF0aCI6Ii8yODYxNjIxOS8zMDYxNDgzNTUtOGIwNGMzYzktM2Q3MS00ZmI0LWJkOWItYTRmNDE1YzU4NzZkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAyMjglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMjI4VDAwMjk0OVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWRjOWRkZjVmMmJmODkzN2U1YjJiNGJlM2YzZTNiMTdjYTZmNmFmOWM1NDJjNWU0MWZhOTRhMDcxZjZhM2RlNjcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.IBLTzvFJ_dkZbx688MHigJKxYlhWv9QtWMTKtDn7Hp8" alt="" secured-asset-link="" style="max-width: 100%;"></a></p>
 </div>
-
 <details>
 <summary><kbd>Table of contents</kbd></summary>
-
-#### TOC
-
-- [👋🏻 Getting Started & Join Our Community](#-getting-started--join-our-community)
-- [✨ Features](#-features)
-- [⚡️ Performance](#️-performance)
-- [🛳 Self Hosting](#-self-hosting)
-  - [`A` Deploying with Vercel, Zeabur or Sealos](#a-deploying-with-vercel-zeabur-or-sealos)
-  - [`B` Deploying with Docker](#b-deploying-with-docker)
-  - [Environment Variable](#environment-variable)
-- [📦 Ecosystem](#-ecosystem)
-- [🧩 Plugins](#-plugins)
-- [⌨️ Local Development](#️-local-development)
-- [🤝 Contributing](#-contributing)
-- [🩷 Sponsor](#-sponsor)
-- [🔗 More Products](#-more-products)
-
-####
-
-<br/>
-
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto">TOC</h4><a id="user-content-toc" class="anchor-element" aria-label="Permalink: TOC" href="#toc"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="#-getting-started--join-our-community">👋🏻 Getting Started &amp; Join Our Community</a></li>
+<li><a href="#-features">✨ Features</a>
+<ul dir="auto">
+<li><a href="#1-multi-model-service-provider-support"><code>1</code> Multi-Model Service Provider Support</a></li>
+<li><a href="#2-local-large-language-model-llm-support"><code>2</code> Local Large Language Model (LLM) Support</a></li>
+<li><a href="#3-model-visual-recognition"><code>3</code> Model Visual Recognition</a></li>
+<li><a href="#4-tts--stt-voice-conversation"><code>4</code> TTS &amp; STT Voice Conversation</a></li>
+<li><a href="#5-text-to-image-generation"><code>5</code> Text to Image Generation</a></li>
+<li><a href="#6-plugin-system-function-calling"><code>6</code> Plugin System (Function Calling)</a></li>
+<li><a href="#7-agent-market-gpts"><code>7</code> Agent Market (GPTs)</a></li>
+<li><a href="#8-progressive-web-app-pwa"><code>8</code> Progressive Web App (PWA)</a></li>
+<li><a href="#9-mobile-device-adaptation"><code>9</code> Mobile Device Adaptation</a></li>
+<li><a href="#10-custom-themes"><code>10</code> Custom Themes</a></li>
+<li><a href="#-whats-more"><code>*</code> What's more</a></li>
+</ul>
+</li>
+<li><a href="#%EF%B8%8F-performance">⚡️ Performance</a></li>
+<li><a href="#-self-hosting">🛳 Self Hosting</a>
+<ul dir="auto">
+<li><a href="#a-deploying-with-vercel-zeabur-or-sealos"><code>A</code> Deploying with Vercel, Zeabur or Sealos</a></li>
+<li><a href="#b-deploying-with-docker"><code>B</code> Deploying with Docker</a></li>
+<li><a href="#environment-variable">Environment Variable</a></li>
+</ul>
+</li>
+<li><a href="#-ecosystem">📦 Ecosystem</a></li>
+<li><a href="#-plugins">🧩 Plugins</a></li>
+<li><a href="#%EF%B8%8F-local-development">⌨️ Local Development</a></li>
+<li><a href="#-contributing">🤝 Contributing</a></li>
+<li><a href="#%EF%B8%8F-sponsor">❤️ Sponsor</a></li>
+<li><a href="#-more-products">🔗 More Products</a></li>
+</ul>
+<h4 dir="auto"></h4>
+<br>
 </details>
-
-## 👋🏻 Getting Started & Join Our Community
-
-Please be aware that LobeChat is currently under active development, and feedback is welcome for any [issues][issues-link] encountered.
-
-| [![][vercel-shield-badge]][vercel-link]   | No installation or registration necessary! Visit our website to experience it firsthand.                           |
-| :---------------------------------------- | :----------------------------------------------------------------------------------------------------------------- |
-| [![][discord-shield-badge]][discord-link] | Join our Discord community! This is where you can connect with developers and other enthusiastic users of LobeHub. |
-
-> \[!IMPORTANT]
->
-> **Star Us**, You will receive all release notifications from GitHub without any delay \~ ⭐️
-
-![](https://gw.alipayobjects.com/zos/kitchen/0hcO8QiU9c/star.webp)
-
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">👋🏻 开始并加入我们的社区</font></font></h2><a id="user-content--getting-started--join-our-community" class="anchor-element" aria-label="永久链接：👋🏻入门并加入我们的社区" href="#-getting-started--join-our-community"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们是一群e/acc设计工程师，希望为AIGC提供现代化的设计组件和工具。</font><font style="vertical-align: inherit;">通过采用Bootstrapping方式，我们旨在为开发者和用户提供更加开放、透明、人性化的产品生态系统。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">无论对于用户还是专业开发人员，LobeHub 都将是您的 AI Agent 游乐场。</font><font style="vertical-align: inherit;">请注意，LobeChat 目前正在积极开发中，欢迎就遇到的任何</font></font><a href="https://img.shields.io/github/issues/lobehub/lobe-chat.svg?style=flat" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">问题</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">提供反馈。</font></font></p>
+<table>
+<thead>
+<tr>
+<th align="left"><a href="https://chat-preview.lobehub.com" rel="nofollow"><img src="https://camo.githubusercontent.com/b2e1c0ba90d5e441771215e62841d0efeb9cd45213a0246a5f64d84bae9a1703/68747470733a2f2f696d672e736869656c64732e696f2f776562736974653f646f776e5f6d6573736167653d6f66666c696e65266c6162656c3d7472792532306c6f626563686174266c6162656c436f6c6f723d626c61636b266c6f676f3d76657263656c267374796c653d666f722d7468652d62616467652675705f6d6573736167653d6f6e6c696e652675726c3d6874747073253341253246253246636861742d707265766965772e6c6f62656875622e636f6d" alt="" data-canonical-src="https://img.shields.io/website?down_message=offline&amp;label=try%20lobechat&amp;labelColor=black&amp;logo=vercel&amp;style=for-the-badge&amp;up_message=online&amp;url=https%3A%2F%2Fchat-preview.lobehub.com" style="max-width: 100%;"></a></th>
+<th align="left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">无需安装或注册！</font><font style="vertical-align: inherit;">请访问我们的网站亲身体验。</font></font></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://discord.gg/AYFPHvv2jT" rel="nofollow"><img src="https://camo.githubusercontent.com/e186b52d2e935544de5398af8ba4cf1820f1ae42e03298772b29a6b2ce14935e/68747470733a2f2f696d672e736869656c64732e696f2f646973636f72642f313132373137313137333938323135343839333f636f6c6f723d353836354632266c6162656c3d646973636f7264266c6162656c436f6c6f723d626c61636b266c6f676f3d646973636f7264266c6f676f436f6c6f723d7768697465267374796c653d666f722d7468652d6261646765" alt="" data-canonical-src="https://img.shields.io/discord/1127171173982154893?color=5865F2&amp;label=discord&amp;labelColor=black&amp;logo=discord&amp;logoColor=white&amp;style=for-the-badge" style="max-width: 100%;"></a></td>
+<td align="left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">加入我们的 Discord 社区！</font><font style="vertical-align: inherit;">您可以在这里与 LobeHub 的开发人员和其他热心用户联系。</font></font></td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-alert markdown-alert-important" dir="auto"><p class="markdown-alert-title" dir="auto"><svg class="octicon octicon-report mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">重要的</font></font></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Star我们</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，您将立即收到来自GitHub的所有发布通知~⭐️</font></font></p>
+</div>
+<p dir="auto"><a href="https://github.com/lobehub/lobe-chat/network/stargazers"><img src="https://private-user-images.githubusercontent.com/17870709/307245588-cb06b748-513f-47c2-8740-d876858d7855.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDkwODA0ODksIm5iZiI6MTcwOTA4MDE4OSwicGF0aCI6Ii8xNzg3MDcwOS8zMDcyNDU1ODgtY2IwNmI3NDgtNTEzZi00N2MyLTg3NDAtZDg3Njg1OGQ3ODU1LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAyMjglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMjI4VDAwMjk0OVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWRmMzMxNzc3MWQ5ZmMyMDE0MzcyMGM5Zjc4YjBlMDUyNjM4YWQ3ZGY0YTkxMmEyYzQxMTljZjRiZTk2NzgyODYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.G3KNXQEb7_2WmIzk6dupK8zZNKmqKzMvcptLswBu2Mw" alt="" secured-asset-link="" style="max-width: 100%;"></a></p>
 <details>
   <summary><kbd>Star History</kbd></summary>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=lobehub%2Flobe-chat&theme=dark&type=Date">
-    <img width="100%" src="https://api.star-history.com/svg?repos=lobehub%2Flobe-chat&type=Date">
-  </picture>
+  <themed-picture data-catalyst-inline="true" data-catalyst=""><picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://camo.githubusercontent.com/d7ed4a3948084f210b77bafe64bd249c2aaca75ef25731d9556c3b3276b2453c/68747470733a2f2f6170692e737461722d686973746f72792e636f6d2f7376673f7265706f733d6c6f62656875622532466c6f62652d63686174267468656d653d6461726b26747970653d44617465" data-canonical-src="https://api.star-history.com/svg?repos=lobehub%2Flobe-chat&amp;theme=dark&amp;type=Date">
+    <img width="100%" src="https://camo.githubusercontent.com/a6b94ee5d9c2414a69f3fb29978db5eb2bf2a0c0f8b513617cc932b65744b8ea/68747470733a2f2f6170692e737461722d686973746f72792e636f6d2f7376673f7265706f733d6c6f62656875622532466c6f62652d6368617426747970653d44617465" data-canonical-src="https://api.star-history.com/svg?repos=lobehub%2Flobe-chat&amp;type=Date" style="visibility:visible;max-width:100%;">
+  </picture></themed-picture>
 </details>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">✨ 特点</font></font></h2><a id="user-content--features" class="anchor-element" aria-label="永久链接：✨ 特点" href="#-features"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a href="https://chat-docs.lobehub.com/en/usage/features/multi-ai-providers" rel="nofollow"><img src="https://private-user-images.githubusercontent.com/28616219/306142175-b164bc54-8ba2-4c1e-b2f2-f4d7f7e7a551.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDkwODA0ODksIm5iZiI6MTcwOTA4MDE4OSwicGF0aCI6Ii8yODYxNjIxOS8zMDYxNDIxNzUtYjE2NGJjNTQtOGJhMi00YzFlLWIyZjItZjRkN2Y3ZTdhNTUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAyMjglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMjI4VDAwMjk0OVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTE1ODBiZTk5ODhhNzZiNmE1YzcyODNiM2FmM2U2ZTAxMDI5NWNjNTBjNzExYzBhMTQwMGJjM2VmNzFlYjcyYTEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.LCyTIRoFNlDded5l1nyupi-ayuDXfuTTq4EADd7bEkM" alt="" secured-asset-link="" style="max-width: 100%;"></a></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><code>1</code> <a href="https://chat-docs.lobehub.com/en/usage/features/multi-ai-providers" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">多模式服务提供商支持</font></font></a></h3><a id="user-content-1-multi-model-service-provider-support" class="anchor-element" aria-label="永久链接：1多模式服务提供商支持" href="#1-multi-model-service-provider-support"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在LobeChat的不断发展中，我们深刻认识到模型服务提供商多元化对于提供AI对话服务时满足社区需求的重要性。</font><font style="vertical-align: inherit;">因此，我们将支持范围扩大到多个模型服务提供商，而不是局限于单一模型服务提供商，以便为用户提供更加多样化和丰富的对话选择。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这样，LobeChat就可以更加灵活地适应不同用户的需求，同时也为开发者提供了更广泛的选择。</font></font></p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">支持的模型服务提供商</font></font></h4><a id="user-content-supported-model-service-providers" class="anchor-element" aria-label="永久链接：支持的模型服务提供商" href="#supported-model-service-providers"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们已经为以下模型服务提供商提供了支持：</font></font></p>
+<ul dir="auto">
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">AWS Bedrock ：与 AWS Bedrock 服务集成，支持</font></font></strong><font style="vertical-align: inherit;"></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Claude / LLama2</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">等模型</font><font style="vertical-align: inherit;">，提供强大的自然语言处理能力。</font></font><a href="https://aws.amazon.com/cn/bedrock" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">了解更多</font></font></a></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Google AI（Gemini Pro、Gemini Vision）</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：访问Google的</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Gemini</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">系列模型，包括Gemini和Gemini Pro，以支持高级语言理解和生成。</font></font><a href="https://deepmind.google/technologies/gemini/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">了解更多</font></font></a></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ChatGLM</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：新增智普爱</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ChatGLM</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">系列机型（GLM-4/GLM-4-vision/GLM-3-turbo），为用户提供另一种高效的对话模型选择。</font></font><a href="https://www.zhipuai.cn/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">了解更多</font></font></a></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Moonshot AI（月之暗面）</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：与来自中国的创新人工智能初创公司Moonshot系列模型集成，旨在提供更深入的对话理解。</font></font><a href="https://www.moonshot.cn/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">了解更多</font></font></a></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">同时，我们还计划支持更多的模型服务商，例如Replicate和Perplexity，以进一步丰富我们的服务商库。</font><font style="vertical-align: inherit;">如果您希望 LobeChat 支持您最喜欢的服务提供商，请随时加入我们的</font></font><a href="https://github.com/lobehub/lobe-chat/discussions/1284" data-hovercard-type="discussion" data-hovercard-url="/lobehub/lobe-chat/discussions/1284/hovercard"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">社区讨论</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<div align="right" dir="auto">
+<p dir="auto"><a href="#readme-top"><img src="https://camo.githubusercontent.com/2f0317adbee7122ad7675fd6691766e0a6165510563511c3c334ac46a088d5e2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4241434b5f544f5f544f502d3135313531353f7374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square" style="max-width: 100%;"></a></p>
+</div>
+<p dir="auto"><a href="https://chat-docs.lobehub.com/en/usage/features/local-llm" rel="nofollow"><img src="https://private-user-images.githubusercontent.com/28616219/306138869-ca9a21bc-ea6c-4c90-bf4a-fa53b4fb2b5c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDkwODA0ODksIm5iZiI6MTcwOTA4MDE4OSwicGF0aCI6Ii8yODYxNjIxOS8zMDYxMzg4NjktY2E5YTIxYmMtZWE2Yy00YzkwLWJmNGEtZmE1M2I0ZmIyYjVjLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAyMjglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMjI4VDAwMjk0OVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWU5YmU5ZjU5NzhjOGMxZWI4ODg3MDBlMDM1YjlkMjZhZWRlNjViMmNiZDk4ZjdkMDkwYzcxZmRlZWQ5NzA2NjQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.PrGAjPVyLnIoi8V_NjI3_dKJ21KtJzkKaZ2-Jp9hZNM" alt="" secured-asset-link="" style="max-width: 100%;"></a></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><code>2</code> <a href="https://chat-docs.lobehub.com/en/usage/features/local-llm" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">本地大语言模型 (LLM) 支持</font></font></a></h3><a id="user-content-2-local-large-language-model-llm-support" class="anchor-element" aria-label="永久链接：2本地大语言模型 (LLM) 支持" href="#2-local-large-language-model-llm-support"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为了满足用户的特定需求，LobeChat还支持使用基于</font></font><a href="https://ollama.ai" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ollama</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">的本地模型，允许用户灵活使用自己或第三方的模型。</font></font></p>
+<div class="markdown-alert markdown-alert-tip" dir="auto"><p class="markdown-alert-title" dir="auto"><svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">提示</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过查看</font><font style="vertical-align: inherit;">了解有关</font></font><a href="https://chat-docs.lobehub.com/en/usage/providers/ollama" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 LobeChat 中使用 Ollama 的更多信息。</font></font></a><font style="vertical-align: inherit;"></font></p>
+</div>
+<div align="right" dir="auto">
+<p dir="auto"><a href="#readme-top"><img src="https://camo.githubusercontent.com/2f0317adbee7122ad7675fd6691766e0a6165510563511c3c334ac46a088d5e2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4241434b5f544f5f544f502d3135313531353f7374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square" style="max-width: 100%;"></a></p>
+</div>
+<p dir="auto"><a href="https://chat-docs.lobehub.com/en/usage/features/vision" rel="nofollow"><img src="https://camo.githubusercontent.com/5c07177b5609bb187d45bc0a584a3511f7ad9bead06d90924a2b9482c5e06a79/68747470733a2f2f6769746875622d70726f64756374696f6e2d757365722d61737365742d3632313064662e73332e616d617a6f6e6177732e636f6d2f31373837303730392f3238343037323132392d33383262646633302d653364362d343431312d623561302d3234393731306238626130382e706e67" alt="" data-canonical-src="https://github-production-user-asset-6210df.s3.amazonaws.com/17870709/284072129-382bdf30-e3d6-4411-b5a0-249710b8ba08.png" style="max-width: 100%;"></a></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><code>3</code> <a href="https://chat-docs.lobehub.com/en/usage/features/vision" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模型视觉识别</font></font></a></h3><a id="user-content-3-model-visual-recognition" class="anchor-element" aria-label="永久链接：3Model 视觉识别" href="#3-model-visual-recognition"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LobeChat 现在支持 OpenAI</font></font><a href="https://platform.openai.com/docs/guides/vision" rel="nofollow"><code>gpt-4-vision</code></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">具有视觉识别功能的最新模型，这是一种可以感知视觉的多模态智能。</font><font style="vertical-align: inherit;">用户可以轻松上传或拖拽图片到对话框中，座席将能够识别图片内容并据此进行智能对话，打造更智能、更多样化的聊天场景。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这一功能开辟了新的交互方式，让沟通超越文本，包含丰富的视觉元素。</font><font style="vertical-align: inherit;">无论是共享日常使用的图像，还是解释特定行业内的图像，代理都能提供出色的对话体验。</font></font></p>
+<div align="right" dir="auto">
+<p dir="auto"><a href="#readme-top"><img src="https://camo.githubusercontent.com/2f0317adbee7122ad7675fd6691766e0a6165510563511c3c334ac46a088d5e2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4241434b5f544f5f544f502d3135313531353f7374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square" style="max-width: 100%;"></a></p>
+</div>
+<p dir="auto"><a href="https://chat-docs.lobehub.com/en/usage/features/tts" rel="nofollow"><img src="https://camo.githubusercontent.com/fe8f3bced57238b2a15e79c0597b8b2ce0cb1ab62cfcaafb84893077eefbef5e/68747470733a2f2f6769746875622d70726f64756374696f6e2d757365722d61737365742d3632313064662e73332e616d617a6f6e6177732e636f6d2f31373837303730392f3238343037323132342d63393835336438642d663162352d343461382d613330352d3435656263306636643139612e706e67" alt="" data-canonical-src="https://github-production-user-asset-6210df.s3.amazonaws.com/17870709/284072124-c9853d8d-f1b5-44a8-a305-45ebc0f6d19a.png" style="max-width: 100%;"></a></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><code>4</code> <a href="https://chat-docs.lobehub.com/en/usage/features/tts" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TTS 和 STT 语音对话</font></font></a></h3><a id="user-content-4-tts--stt-voice-conversation" class="anchor-element" aria-label="永久链接：4TTS 和 STT 语音对话" href="#4-tts--stt-voice-conversation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LobeChat 支持文本转语音 (TTS) 和语音转文本 (STT) 技术，使我们的应用程序能够将文本消息转换为清晰的语音输出，允许用户与我们的会话代理交互，就像与真人交谈一样。</font><font style="vertical-align: inherit;">用户可以选择多种声音来与代理配对。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此外，TTS 为那些喜欢听觉学习或希望在忙碌时接收信息的人提供了一个极好的解决方案。</font><font style="vertical-align: inherit;">在LobeChat中，我们精心挑选了一系列高质量的语音选项（OpenAI Audio、Microsoft Edge Speech），以满足来自不同地区和文化背景的用户的需求。</font><font style="vertical-align: inherit;">用户可以选择适合自己喜好或特定场景的语音，从而获得个性化的沟通体验。</font></font></p>
+<div align="right" dir="auto">
+<p dir="auto"><a href="#readme-top"><img src="https://camo.githubusercontent.com/2f0317adbee7122ad7675fd6691766e0a6165510563511c3c334ac46a088d5e2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4241434b5f544f5f544f502d3135313531353f7374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square" style="max-width: 100%;"></a></p>
+</div>
+<p dir="auto"><a href="https://chat-docs.lobehub.com/en/usage/features/text-to-image" rel="nofollow"><img src="https://camo.githubusercontent.com/ab5fec414957c93b7f16f0066d9e5f1f1c7a19860fd19b9886a9c51a4b7623a1/68747470733a2f2f6769746875622d70726f64756374696f6e2d757365722d61737365742d3632313064662e73332e616d617a6f6e6177732e636f6d2f31373837303730392f3239373734363434352d30666637363262392d616130382d343333372d616662372d3132663933326236656662622e706e67" alt="" data-canonical-src="https://github-production-user-asset-6210df.s3.amazonaws.com/17870709/297746445-0ff762b9-aa08-4337-afb7-12f932b6efbb.png" style="max-width: 100%;"></a></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><code>5</code> <a href="https://chat-docs.lobehub.com/en/usage/features/text-to-image" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文本到图像生成</font></font></a></h3><a id="user-content-5-text-to-image-generation" class="anchor-element" aria-label="永久链接：5文本到图像生成" href="#5-text-to-image-generation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过支持最新的文本到图像生成技术，LobeChat 现在允许用户在与代理的对话中直接调用图像创建工具。</font></font><a href="https://openai.com/dall-e-3" rel="nofollow"><code>DALL-E 3</code></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过利用、</font></font><a href="https://www.midjourney.com/" rel="nofollow"><code>MidJourney</code></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、 和 等</font><font style="vertical-align: inherit;">人工智能工具的功能</font></font><a href="https://pollinations.ai/" rel="nofollow"><code>Pollinations</code></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，代理现在可以将您的想法转化为图像。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这使得创作过程更加私密和身临其境，从而可以将视觉叙事无缝集成到您与代理的个人对话中。</font></font></p>
+<div align="right" dir="auto">
+<p dir="auto"><a href="#readme-top"><img src="https://camo.githubusercontent.com/2f0317adbee7122ad7675fd6691766e0a6165510563511c3c334ac46a088d5e2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4241434b5f544f5f544f502d3135313531353f7374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square" style="max-width: 100%;"></a></p>
+</div>
+<p dir="auto"><a href="https://chat-docs.lobehub.com/en/usage/features/plugin-system" rel="nofollow"><img src="https://camo.githubusercontent.com/5c4c8aee88101a391a14afac0e49bec5f6884af9bec26df70381092363a1c4f0/68747470733a2f2f6769746875622d70726f64756374696f6e2d757365722d61737365742d3632313064662e73332e616d617a6f6e6177732e636f6d2f31373837303730392f3236383637303838332d33336334336135632d613531322d343637652d383535632d6661323939353438636365352e706e67" alt="" data-canonical-src="https://github-production-user-asset-6210df.s3.amazonaws.com/17870709/268670883-33c43a5c-a512-467e-855c-fa299548cce5.png" style="max-width: 100%;"></a></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><code>6</code> <a href="https://chat-docs.lobehub.com/en/usage/features/plugin-system" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">插件系统（函数调用）</font></font></a></h3><a id="user-content-6-plugin-system-function-calling" class="anchor-element" aria-label="永久链接：6Plugin系统（函数调用）" href="#6-plugin-system-function-calling"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LobeChat的插件生态是其核心功能的重要扩展，极大增强了LobeChat助手的实用性和灵活性。</font></font></p>
+<p dir="auto"><gh:secured-asset-reference resource_type="UserAsset" resource_id="283977245"></gh:secured-asset-reference></p><details open="" class="details-reset border rounded-2">
+  <summary class="px-3 py-2">
+    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-device-camera-video">
+    <path d="M16 3.75v8.5a.75.75 0 0 1-1.136.643L11 10.575v.675A1.75 1.75 0 0 1 9.25 13h-7.5A1.75 1.75 0 0 1 0 11.25v-6.5C0 3.784.784 3 1.75 3h7.5c.966 0 1.75.784 1.75 1.75v.675l3.864-2.318A.75.75 0 0 1 16 3.75Zm-6.5 1a.25.25 0 0 0-.25-.25h-7.5a.25.25 0 0 0-.25.25v6.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-6.5ZM11 8.825l3.5 2.1v-5.85l-3.5 2.1Z"></path>
+</svg>
+    <span aria-label="视频说明Plugin-Demo.mp4" class="m-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">插件演示.mp4</font></font></span>
+    <span class="dropdown-caret"></span>
+  </summary>
 
-## ✨ Features
+  <video src="https://github.com/lobehub/lobe-chat/assets/28616219/f29475a3-f346-4196-a435-41a6373ab9e2" data-canonical-src="https://github.com/lobehub/lobe-chat/assets/28616219/f29475a3-f346-4196-a435-41a6373ab9e2" controls="controls" muted="muted" class="d-block rounded-bottom-2 border-top width-fit" style="max-height:640px; min-height: 200px">
 
-![](https://github-production-user-asset-6210df.s3.amazonaws.com/17870709/284072129-382bdf30-e3d6-4411-b5a0-249710b8ba08.png)
-
-#### `1` Visual Model Support
-
-LobeChat now supports OpenAI's latest [`gpt-4-vision`](https://platform.openai.com/docs/guides/vision) model with visual recognition capabilities,
-a multimodal intelligence that can perceive visuals. Users can easily upload or drag and drop images into the dialogue box,
-and the agent will be able to recognize the content of the images and engage in intelligent conversation based on this,
-creating smarter and more diversified chat scenarios.
-
-This feature opens up new interactive methods, allowing communication to transcend text and include a wealth of visual elements.
-Whether it's sharing images in daily use or interpreting images within specific industries, the agent provides an outstanding conversational experience.
-
-<div align="right">
-
-[![][back-to-top]](#readme-top)
-
+  </video>
+</details>
+<p></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过利用插件，LobeChat助手可以获取并处理实时信息，例如搜索网络信息并为用户提供即时的相关新闻。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此外，这些插件不仅限于新闻聚合，还可以扩展到其他实用功能，例如快速搜索文档、生成图像、从Bilibili、Steam等各种平台获取数据以及与各种第三方服务交互等。</font></font></p>
+<div class="markdown-alert markdown-alert-tip" dir="auto"><p class="markdown-alert-title" dir="auto"><svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">提示</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过查看了解有关</font></font><a href="https://chat-docs.lobehub.com/en/usage/plugins/basic" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">📘 插件用法</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">的更多信息。</font></font></p>
 </div>
 
-![](https://github-production-user-asset-6210df.s3.amazonaws.com/17870709/284072124-c9853d8d-f1b5-44a8-a305-45ebc0f6d19a.png)
-
-#### `2` TTS & STT Voice Speech
-
-LobeChat supports Text-to-Speech (TTS) and Speech-to-Text (STT) technologies, enabling our application to convert text messages into clear voice outputs,
-allowing users to interact with our conversational agent as if they were talking to a real person. Users can choose from a variety of voices to pair with the agent.
-
-Moreover, TTS offers an excellent solution for those who prefer auditory learning or desire to receive information while busy.
-In LobeChat, we have meticulously selected a range of high-quality voice options (OpenAI Audio, Microsoft Edge Speech) to meet the needs of users from different regions and cultural backgrounds.
-Users can choose the voice that suits their personal preferences or specific scenarios, resulting in a personalized communication experience.
-
-> \[!NOTE]
->
-> In the process of implementing this feature, we found that there was no satisfactory TTS (Text-to-Speech) frontend library available on the market.
-> As a result, we invested a lot of effort, including data conversion, audio progress management, and speech visualization, among other tasks.
-
-> \[!IMPORTANT]
->
-> Therefore, we decided to refine our implementation and make it open source, hoping to assist developers who wish to implement TTS.
-> [@lobehub/tts][lobe-tts-github] is a high-quality TTS toolkit developed in TypeScript, which supports usage both on the server-side and in the browser.
->
-> - **Server-side:** With just 15 lines of code, you can achieve high-quality voice generation capabilities comparable to OpenAI's TTS service. It currently supports EdgeSpeechTTS, MicrosoftTTS, OpenAITTS, and OpenAISTT.
-> - **Browser-side:** It provides high-quality React Hooks and visual audio components, supporting common functions such as loading, playing, pausing, and dragging the timeline. Additionally, it offers a very rich set of capabilities for adjusting the audio track styles.
-
-<div align="right">
-
-[![][back-to-top]](#readme-top)
-
+<table>
+<thead>
+<tr>
+<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">最近提交</font></font></th>
+<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">描述</font></font></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://chat-preview.lobehub.com/settings/agent" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">图表和图表</font></font></a><br><sup><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">作者</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">pyxl</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">于</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2024-02-05</font></font></strong></sup></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">美人鱼图、演示方案、分析、研究网站、饼图。</font></font><br><code>chart</code> <code>diagram</code></td>
+</tr>
+<tr>
+<td><a href="https://chat-preview.lobehub.com/settings/agent" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">社交搜索</font></font></a><br><sup><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">由</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">say-apps</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">发布于</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2024 年 2 月 2 日</font></font></strong></sup></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">社交搜索提供对推文、用户、关注者、图像、媒体等的访问。</font></font><br><code>social</code> <code>twitter</code> <code>x</code> <code>search</code></td>
+</tr>
+<tr>
+<td><a href="https://chat-preview.lobehub.com/settings/agent" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TokenInsights</font></font></a><br><sup><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">来自</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">feednews</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">于</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2024-01-27</font></font></strong></sup></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">获取实时加密货币价格、BTC、ETH、BNB 和最新见解。最新的币种新闻和空投机会。</font></font><br><code>crypto</code> <code>btc</code> <code>eth</code> <code>bnb</code></td>
+</tr>
+<tr>
+<td><a href="https://chat-preview.lobehub.com/settings/agent" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">哔哩哔哩 作者</font></font></a><br><sup><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LobeHub</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">于</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2024-01-27</font></font></strong></sup></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过关键字视频搜索、重播访问、互动弹幕、热门视频推荐和热搜洞察等功能，深入了解 Bilibili 的海量内容，一切尽在您的指尖。</font></font><br><code>video</code> <code>bilibili</code> <code>search</code></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">📊 插件总数：</font></font><a href="https://github.com/lobehub/lobe-chat-plugins"><kbd><strong>61</strong></kbd></a></p>
+</blockquote>
+ 
+<div align="right" dir="auto">
+<p dir="auto"><a href="#readme-top"><img src="https://camo.githubusercontent.com/2f0317adbee7122ad7675fd6691766e0a6165510563511c3c334ac46a088d5e2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4241434b5f544f5f544f502d3135313531353f7374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square" style="max-width: 100%;"></a></p>
+</div>
+<p dir="auto"><a href="https://chat-docs.lobehub.com/en/usage/features/agent-market" rel="nofollow"><img src="https://camo.githubusercontent.com/b11cfbd0f92da8243d8db682fff763d608e95c77a89960247537648d4e48447f/68747470733a2f2f6769746875622d70726f64756374696f6e2d757365722d61737365742d3632313064662e73332e616d617a6f6e6177732e636f6d2f31373837303730392f3236383637303836392d66316666626636362d343262362d343263662d613933372d3963653166383332383531342e706e67" alt="" data-canonical-src="https://github-production-user-asset-6210df.s3.amazonaws.com/17870709/268670869-f1ffbf66-42b6-42cf-a937-9ce1f8328514.png" style="max-width: 100%;"></a></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><code>7</code> <a href="https://chat-docs.lobehub.com/en/usage/features/agent-market" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">代理市场 (GPT)</font></font></a></h3><a id="user-content-7-agent-market-gpts" class="anchor-element" aria-label="永久链接：7Agent 市场 (GPT)" href="#7-agent-market-gpts"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在LobeChat Agent Marketplace中，创作者可以发现一个充满活力和创新的社区，汇集了众多精心设计的Agent，这些Agent不仅在工作场景中发挥着重要作用，而且在学习过程中也提供了极大的便利。</font><font style="vertical-align: inherit;">我们的市场不仅仅是一个展示平台，也是一个协作空间。</font><font style="vertical-align: inherit;">在这里，每个人都可以贡献自己的智慧，分享自己开发的代理。</font></font></p>
+<div class="markdown-alert markdown-alert-tip" dir="auto"><p class="markdown-alert-title" dir="auto"><svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">提示</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过</font></font><a href="https://github.com/lobehub/lobe-chat-agents"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🤖/🏪提交代理</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，您可以轻松地将您的代理创作提交到我们的平台。</font><font style="vertical-align: inherit;">重要的是，LobeChat 建立了复杂的自动化国际化 (i18n) 工作流程，能够将您的代理无缝翻译为多种语言版本。</font><font style="vertical-align: inherit;">这意味着无论您的用户使用哪种语言，他们都可以无障碍地体验您的代理。</font></font></p>
+</div>
+<div class="markdown-alert markdown-alert-important" dir="auto"><p class="markdown-alert-title" dir="auto"><svg class="octicon octicon-report mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">重要的</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们欢迎所有用户加入这个不断发展的生态系统，参与代理的迭代和优化。</font><font style="vertical-align: inherit;">我们可以一起创造更多有趣、实用、创新的代理，进一步丰富代理产品的多样性和实用性。</font></font></p>
 </div>
 
-![](https://github-production-user-asset-6210df.s3.amazonaws.com/17870709/268670883-33c43a5c-a512-467e-855c-fa299548cce5.png)
-
-#### `3` Function Calling Plugin System
-
-The plugin ecosystem of LobeChat is a significant extension of its core functionalities, greatly enhancing the practicality and flexibility of ChatGPT.
-By leveraging plugins, ChatGPT can perform real-time information retrieval and processing,
-such as automatically fetching the latest news headlines to provide users with immediate and relevant information.
-Moreover, these plugins are not limited to news aggregation but can also extend to other practical functions, such as quick document retrieval,
-e-commerce platform data access, and various third-party services.
-
-[Learn More →](./docs/Usage/Plugins.md)
-
-<video controls src="https://github.com/lobehub/lobe-chat/assets/28616219/f29475a3-f346-4196-a435-41a6373ab9e2" muted="false"></video>
-
-> \[!TIP]
->
-> To aid developers in joining this ecosystem, we provide comprehensive development resources in the [🧩 Plugin System](#-plugins) section.
-> This includes detailed component development documentation,
-> a fully-featured software development kit (SDK), and template files—all designed to simplify the development process and lower the barrier to entry for developers.
-
-> \[!IMPORTANT]
->
-> We welcome developers to use these resources to unleash their creativity and write feature-rich, user-friendly plugins.
-> With collective efforts, we can continuously expand the boundaries of chat applications and explore a more intelligent and efficient creativity platform.
-
-<!-- PLUGIN LIST -->
-
-| Recent Submits                                                                                                     | Description                                                                                                                                  |
-| ------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| [weather GPT](https://chat-preview.lobehub.com/settings/agent)<br/><sup>By **Steven Tey** on **2023-12-16**</sup>  | Get current weather information for a specific location.<br/>`weather`                                                                       |
-| [Ask Your PDF](https://chat-preview.lobehub.com/settings/agent)<br/><sup>By **AskYourPDF** on **2023-12-16**</sup> | Unlock the power of your PDFs!, dive into your documents, find answers, and bring information to your fingertips.<br/>`pdf` `document` `web` |
-| [Clock Time](https://chat-preview.lobehub.com/settings/agent)<br/><sup>By **LobeHub** on **2023-11-01**</sup>      | Display a clock to show current time<br/>`clock` `time`                                                                                      |
-| [Mindmap](https://chat-preview.lobehub.com/settings/agent)<br/><sup>By **Moonlit7** on **2023-12-19**</sup>        | A mindmap generation assistant<br/>`mindmap`                                                                                                 |
-
-> 📊 Total plugins: [<kbd>**9**</kbd>](https://github.com/lobehub/lobe-chat-plugins)
-
- <!-- PLUGIN LIST -->
-
-<div align="right">
-
-[![][back-to-top]](#readme-top)
-
+<table>
+<thead>
+<tr>
+<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">最近提交</font></font></th>
+<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">描述</font></font></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://chat-preview.lobehub.com/market?agent=github-finder" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitHub Finder</font></font></a><br><sup><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">作者</font></font><strong><a href="https://github.com/nullmastermind"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">nullmastermind</font></font></a></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">于</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2024-02-25</font></font></strong></sup></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">专门根据自定义公式建议 GitHub 上的开源存储库。</font></font><br><code>coding</code> <code>open-source</code> <code>github</code> <code>algorithm</code> <code>sorting</code></td>
+</tr>
+<tr>
+<td><a href="https://chat-preview.lobehub.com/market?agent=variable-naming" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">命名专家</font></font></a><font style="vertical-align: inherit;"><sup><strong><a href="https://github.com/zsio"><font style="vertical-align: inherit;">zsio</font></a></strong></sup></font><br><sup><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">发表</font><font style="vertical-align: inherit;">于</font><strong><font style="vertical-align: inherit;">2024-02-24</font></strong></font><strong><a href="https://github.com/zsio"><font style="vertical-align: inherit;"></font></a></strong><font style="vertical-align: inherit;"></font><strong><font style="vertical-align: inherit;"></font></strong></sup></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">专门生成变量名和函数名</font></font><br><code>programming</code> <code>variable-naming</code> <code>function-naming</code></td>
+</tr>
+<tr>
+<td><a href="https://chat-preview.lobehub.com/market?agent=lobe-chat-developer-document-writer" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LobeChat 技术文档专家 作者</font></font></a><br><sup><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font><strong><a href="https://github.com/arvinxx"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">arvinxx</font></font></a></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">于</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2024-02-22</font></font></strong></sup></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LobeChat 是一款使用 Next.js 框架构建的人工智能对话应用程序。</font><font style="vertical-align: inherit;">我将帮助您编写LobeChat的开发文档。</font></font><br><code>development-documentation</code> <code>technical-introduction</code> <code>next-js</code> <code>react</code> <code>lobe-chat</code></td>
+</tr>
+<tr>
+<td><a href="https://chat-preview.lobehub.com/market?agent=causal" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您的日常人工智能伴侣。</font></font></a><br><sup><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">作者：</font></font><strong><a href="https://github.com/richards199999"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">richards199999</font></font></a></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">发表于</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2024-02-21</font></font></strong></sup></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我一直是一个很好的 Bing。</font><font style="vertical-align: inherit;">😊</font></font><br><code>bing</code> <code>conversation</code> <code>creative</code></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">📊 代理商总数：</font></font><a href="https://github.com/lobehub/lobe-chat-agents"><kbd><strong>184</strong></kbd> </a></p>
+</blockquote>
+ 
+<div align="right" dir="auto">
+<p dir="auto"><a href="#readme-top"><img src="https://camo.githubusercontent.com/2f0317adbee7122ad7675fd6691766e0a6165510563511c3c334ac46a088d5e2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4241434b5f544f5f544f502d3135313531353f7374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square" style="max-width: 100%;"></a></p>
 </div>
-
-![](https://github-production-user-asset-6210df.s3.amazonaws.com/17870709/268670869-f1ffbf66-42b6-42cf-a937-9ce1f8328514.png)
-
-#### `4` Agent Market
-
-In the LobeChat Agent Marketplace, creators can discover a vibrant and innovative community that brings together a multitude of well-designed agents,
-which not only play an important role in work scenarios but also offer great convenience in learning processes.
-Our marketplace is not just a showcase platform but also a collaborative space. Here, everyone can contribute their wisdom and share the agents they have developed.
-
-> \[!TIP]
->
-> By [🤖/🏪 Submit Agents][submit-agents-link], you can easily submit your agent creations to our platform.
-> Importantly, LobeChat has established a sophisticated automated internationalization (i18n) workflow,
-> capable of seamlessly translating your agent into multiple language versions.
-> This means that no matter what language your users speak, they can experience your agent without barriers.
-
-> \[!IMPORTANT]
->
-> We welcome all users to join this growing ecosystem and participate in the iteration and optimization of agents.
-> Together, we can create more interesting, practical, and innovative agents, further enriching the diversity and practicality of the agent offerings.
-
-<!-- AGENT LIST -->
-
-| Recent Submits                                                                                                                                                                 | Description                                                                                                   |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------- |
-| [Facebook Ads Expert](https://chat-preview.lobehub.com/market?agent=facebook-ads-expert)<br/><sup>By **[alissonryan](https://github.com/alissonryan)** on **2023-12-20**</sup> | Create a Facebook Ads with a expert<br/>`copywriting` `facebook-ads` `lead-generation`                        |
-| [Dream Painter](https://chat-preview.lobehub.com/market?agent=dream-painter)<br/><sup>By **[ccdanpian](https://github.com/ccdanpian)** on **2023-12-19**</sup>                 | A dream artist who can bring your dreams into reality.<br/>`txt-2-img` `painter`                              |
-| [NewsHub](https://chat-preview.lobehub.com/market?agent=news-hub)<br/><sup>By **[ccdanpian](https://github.com/ccdanpian)** on **2023-12-19**</sup>                            | A news search assistant proficient at finding and presenting relevant news<br/>`news` `search` `helper`       |
-| [NewsNest](https://chat-preview.lobehub.com/market?agent=news-nest)<br/><sup>By **[ccdanpian](https://github.com/ccdanpian)** on **2023-12-19**</sup>                          | A news search assistant, can help you find and display relevant news based on your needs.<br/>`news` `search` |
-
-> 📊 Total agents: [<kbd>**79**</kbd> ](https://github.com/lobehub/lobe-chat-agents)
-
- <!-- AGENT LIST -->
-
-<div align="right">
-
-[![][back-to-top]](#readme-top)
-
+<p dir="auto"><a href="https://chat-docs.lobehub.com/en/usage/features/pwa" rel="nofollow"><img src="https://camo.githubusercontent.com/dea6bf3255416f7fbc4699a9a24993a491167882b2e6b038c1cfb39ce30da7a5/68747470733a2f2f67772e616c697061796f626a656374732e636f6d2f7a6f732f6b69746368656e2f36397836626c6c6b58332f7077612e77656270" alt="" data-canonical-src="https://gw.alipayobjects.com/zos/kitchen/69x6bllkX3/pwa.webp" style="max-width: 100%;"></a></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><code>8</code> <a href="https://chat-docs.lobehub.com/en/usage/features/pwa" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">渐进式网络应用程序 (PWA)</font></font></a></h3><a id="user-content-8-progressive-web-app-pwa" class="anchor-element" aria-label="永久链接：8Progressive Web App (PWA)" href="#8-progressive-web-app-pwa"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们深刻理解在当今的多设备环境中为用户提供无缝体验的重要性。</font><font style="vertical-align: inherit;">因此，我们采用了渐进式 Web 应用程序 ( </font></font><a href="https://support.google.com/chrome/answer/9658361" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PWA</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ) 技术，这是一种现代 Web 技术，可将 Web 应用程序提升到接近原生应用程序的体验。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过 PWA，LobeChat 可以在桌面和移动设备上提供高度优化的用户体验，同时保持其轻量级和高性能的特性。</font><font style="vertical-align: inherit;">在视觉和手感方面，我们还精心设计了界面，确保其与原生应用程序没有区别，提供流畅的动画、响应式布局并适应不同的设备屏幕分辨率。</font></font></p>
+<div class="markdown-alert markdown-alert-note" dir="auto"><p class="markdown-alert-title" dir="auto"><svg class="octicon octicon-info mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您不熟悉PWA的安装过程，您可以按照以下步骤将LobeChat添加为桌面应用程序（也适用于移动设备）：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在计算机上启动 Chrome 或 Edge 浏览器。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">访问 LobeChat 网页。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在地址栏的右上角，单击 图标</font></font><kbd>Install</kbd><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">按照屏幕上的说明完成 PWA 安装。</font></font></li>
+</ul>
 </div>
-
-![](https://gw.alipayobjects.com/zos/kitchen/69x6bllkX3/pwa.webp)
-
-#### `5` Progress Web App
-
-We deeply understand the importance of providing a seamless experience for users in today's multi-device environment.
-Therefore, we have adopted Progressive Web Application ([PWA](https://support.google.com/chrome/answer/9658361)) technology,
-a modern web technology that elevates web applications to an experience close to that of native apps.
-
-Through PWA, LobeChat can offer a highly optimized user experience on both desktop and mobile devices while maintaining its lightweight and high-performance characteristics.
-Visually and in terms of feel, we have also meticulously designed the interface to ensure it is indistinguishable from native apps,
-providing smooth animations, responsive layouts, and adapting to different device screen resolutions.
-
-> \[!NOTE]
->
-> If you are unfamiliar with the installation process of PWA, you can add LobeChat as your desktop application (also applicable to mobile devices) by following these steps:
->
-> - Launch the Chrome or Edge browser on your computer.
-> - Visit the LobeChat webpage.
-> - In the upper right corner of the address bar, click on the <kbd>Install</kbd> icon.
-> - Follow the instructions on the screen to complete the PWA Installation.
-
-<div align="right">
-
-[![][back-to-top]](#readme-top)
-
+<div align="right" dir="auto">
+<p dir="auto"><a href="#readme-top"><img src="https://camo.githubusercontent.com/2f0317adbee7122ad7675fd6691766e0a6165510563511c3c334ac46a088d5e2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4241434b5f544f5f544f502d3135313531353f7374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square" style="max-width: 100%;"></a></p>
 </div>
-
-![](https://gw.alipayobjects.com/zos/kitchen/R441AuFS4W/mobile.webp)
-
-#### `6` Mobile Device Adaptation
-
-We have carried out a series of optimization designs for mobile devices to enhance the user's mobile experience. Currently, we are iterating on the mobile user experience to achieve smoother and more intuitive interactions. If you have any suggestions or ideas, we welcome you to provide feedback through GitHub Issues or Pull Requests.
-
-<div align="right">
-
-[![][back-to-top]](#readme-top)
-
+<p dir="auto"><a href="https://chat-docs.lobehub.com/en/usage/features/mobile" rel="nofollow"><img src="https://camo.githubusercontent.com/123aea1ba3da2a9b9dd692ff95d919fc46f3ab4830df36fdafec4344e4a05f7a/68747470733a2f2f67772e616c697061796f626a656374732e636f6d2f7a6f732f6b69746368656e2f523434314175465334572f6d6f62696c652e77656270" alt="" data-canonical-src="https://gw.alipayobjects.com/zos/kitchen/R441AuFS4W/mobile.webp" style="max-width: 100%;"></a></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><code>9</code> <a href="https://chat-docs.lobehub.com/en/usage/features/mobile" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">移动设备适配</font></font></a></h3><a id="user-content-9-mobile-device-adaptation" class="anchor-element" aria-label="永久链接：9移动设备适配" href="#9-mobile-device-adaptation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们针对移动设备进行了一系列优化设计，提升用户的移动体验。</font><font style="vertical-align: inherit;">目前，我们正在迭代移动用户体验，以实现更流畅、更直观的交互。</font><font style="vertical-align: inherit;">如果您有任何建议或想法，我们欢迎您通过 GitHub Issues 或 Pull Requests 提供反馈。</font></font></p>
+<div align="right" dir="auto">
+<p dir="auto"><a href="#readme-top"><img src="https://camo.githubusercontent.com/2f0317adbee7122ad7675fd6691766e0a6165510563511c3c334ac46a088d5e2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4241434b5f544f5f544f502d3135313531353f7374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square" style="max-width: 100%;"></a></p>
 </div>
-
-![](https://gw.alipayobjects.com/zos/kitchen/pvus1lo%26Z7/darkmode.webp)
-
-#### `7` Theme Mode Selection
-
-As a design-engineering-oriented application, LobeChat places great emphasis on users' personalized experiences,
-hence introducing flexible and diverse theme modes, including a light mode for daytime and a dark mode for nighttime.
-Beyond switching theme modes, a range of color customization options allow users to adjust the application's theme colors according to their preferences.
-Whether it's a desire for a sober dark blue, a lively peach pink, or a professional gray-white, users can find their style of color choices in LobeChat.
-
-> \[!TIP]
->
-> The default configuration can intelligently recognize the user's system color mode and automatically switch themes to ensure a consistent visual experience with the operating system.
-> For users who like to manually control details, LobeChat also offers intuitive setting options and a choice between chat bubble mode and document mode for conversation scenarios.
-
-<div align="right">
-
-[![][back-to-top]](#readme-top)
-
+<p dir="auto"><a href="https://chat-docs.lobehub.com/en/usage/features/theme" rel="nofollow"><img src="https://camo.githubusercontent.com/3ed2462dc7c940b6581cbb1b85289f23f5d7b684b725e247c7dd3a46aa504362/68747470733a2f2f67772e616c697061796f626a656374732e636f6d2f7a6f732f6b69746368656e2f70767573316c6f2532365a372f6461726b6d6f64652e77656270" alt="" data-canonical-src="https://gw.alipayobjects.com/zos/kitchen/pvus1lo%26Z7/darkmode.webp" style="max-width: 100%;"></a></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><code>10</code> <a href="https://chat-docs.lobehub.com/en/usage/features/theme" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">自定义主题</font></font></a></h3><a id="user-content-10-custom-themes" class="anchor-element" aria-label="永久链接：10 个自定义主题" href="#10-custom-themes"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">作为一款面向设计工程的应用，LobeChat非常注重用户的个性化体验，因此引入了灵活多样的主题模式，包括白天的浅色模式和夜间的深色模式。</font><font style="vertical-align: inherit;">除了切换主题模式之外，一系列颜色自定义选项允许用户根据自己的喜好调整应用程序的主题颜色。</font><font style="vertical-align: inherit;">无论是想要沉稳的深蓝色、活泼的桃粉色，还是专业的灰白色，用户都可以在LobeChat中找到适合自己风格的颜色选择。</font></font></p>
+<div class="markdown-alert markdown-alert-tip" dir="auto"><p class="markdown-alert-title" dir="auto"><svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">提示</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">默认配置可以智能识别用户的系统色彩模式并自动切换主题，保证与操作系统一致的视觉体验。</font><font style="vertical-align: inherit;">对于喜欢手动控制细节的用户，LobeChat 还提供直观的设置选项以及对话场景的聊天气泡模式和文档模式之间的选择。</font></font></p>
 </div>
-
-#### What's more
-
-Beside these features, LobeChat also have much better basic technique underground:
-
-- [x] 💨 **Quick Deployment**: Using the Vercel platform or docker image, you can deploy with just one click and complete the process within 1 minute without any complex configuration.
-- [x] 🌐 **Custom Domain**: If users have their own domain, they can bind it to the platform for quick access to the dialogue agent from anywhere.
-- [x] 🔒 **Privacy Protection**: All data is stored locally in the user's browser, ensuring user privacy.
-- [x] 💎 **Exquisite UI Design**: With a carefully designed interface, it offers an elegant appearance and smooth interaction. It supports light and dark themes and is mobile-friendly. PWA support provides a more native-like experience.
-- [x] 🗣️ **Smooth Conversation Experience**: Fluid responses ensure a smooth conversation experience. It fully supports Markdown rendering, including code highlighting, LaTex formulas, Mermaid flowcharts, and more.
-
-> ✨ more features will be added when LobeChat evolve.
-
----
-
-> \[!NOTE]
->
-> You can find our upcoming [Roadmap][github-project-link] plans in the Projects section.
-
-<div align="right">
-
-[![][back-to-top]](#readme-top)
-
+<div align="right" dir="auto">
+<p dir="auto"><a href="#readme-top"><img src="https://camo.githubusercontent.com/2f0317adbee7122ad7675fd6691766e0a6165510563511c3c334ac46a088d5e2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4241434b5f544f5f544f502d3135313531353f7374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square" style="max-width: 100%;"></a></p>
 </div>
-
-## ⚡️ Performance
-
-> \[!NOTE]
->
-> The complete list of reports can be found in the [📘 Lighthouse Reports](https://github.com/lobehub/lobe-chat/wiki/Lighthouse)
-
-|                   Desktop                   |                   Mobile                   |
-| :-----------------------------------------: | :----------------------------------------: |
-|              ![][chat-desktop]              |              ![][chat-mobile]              |
-| [📑 Lighthouse Report][chat-desktop-report] | [📑 Lighthouse Report][chat-mobile-report] |
-
-<div align="right">
-
-[![][back-to-top]](#readme-top)
-
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><code>*</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">更重要的是</font></font></h3><a id="user-content--whats-more" class="anchor-element" aria-label="永久链接： * 更重要的是" href="#-whats-more"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">除了这些功能之外，LobeChat 还拥有更好的地下基础技术：</font></font></p>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">💨</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">快速部署</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：使用Vercel平台或docker镜像，一键部署，1分钟内完成，无需任何复杂配置。</font></font></li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🌐</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">自定义域名</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：如果用户有自己的域名，可以将其绑定到平台，以便从任何地方快速访问对话代理。</font></font></li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔒</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">隐私保护</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：所有数据都存储在用户浏览器本地，确保用户隐私。</font></font></li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">💎</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">精致的UI设计</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：精心设计的界面，提供优雅的外观和流畅的交互。</font><font style="vertical-align: inherit;">它支持浅色和深色主题，并且适合移动设备。</font><font style="vertical-align: inherit;">PWA 支持提供了更加原生的体验。</font></font></li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🗣️</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">流畅的对话体验</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：流畅的响应确保流畅的对话体验。</font><font style="vertical-align: inherit;">它完全支持Markdown渲染，包括代码高亮、LaTex公式、Mermaid流程图等等。</font></font></li>
+</ul>
+<blockquote>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">✨ 当 LobeChat 发展时将添加更多功能。</font></font></p>
+</blockquote>
+<hr>
+<div class="markdown-alert markdown-alert-note" dir="auto"><p class="markdown-alert-title" dir="auto"><svg class="octicon octicon-info mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以在“项目”部分</font><font style="vertical-align: inherit;">找到我们即将推出的</font></font><a href="https://github.com/lobehub/lobe-chat/projects"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">路线图计划。</font></font></a><font style="vertical-align: inherit;"></font></p>
 </div>
-
-## 🛳 Self Hosting
-
-LobeChat provides Self-Hosted Version with Vercel and [Docker Image][docker-release-link]. This allows you to deploy your own chatbot within a few minutes without any prior knowledge.
-
-### `A` Deploying with Vercel, Zeabur or Sealos
-
-If you want to deploy this service yourself on either Vercel or Zeabur, you can follow these steps:
-
-- Prepare your [OpenAI API Key](https://platform.openai.com/account/api-keys).
-- Click the button below to start deployment: Log in directly with your GitHub account, and remember to fill in the `OPENAI_API_KEY`(required) and `ACCESS_CODE` (recommended) on the environment variable section.
-- After deployment, you can start using it.
-- Bind a custom domain (optional): The DNS of the domain assigned by Vercel is polluted in some areas; binding a custom domain can connect directly.
-
-<div align="center">
-
-|           Deploy with Vercel            |                     Deploy with Zeabur                      |                     Deploy with Sealos                      |
-| :-------------------------------------: | :---------------------------------------------------------: | :---------------------------------------------------------: |
-| [![][deploy-button-image]][deploy-link] | [![][deploy-on-zeabur-button-image]][deploy-on-zeabur-link] | [![][deploy-on-sealos-button-image]][deploy-on-sealos-link] |
-
+<div align="right" dir="auto">
+<p dir="auto"><a href="#readme-top"><img src="https://camo.githubusercontent.com/2f0317adbee7122ad7675fd6691766e0a6165510563511c3c334ac46a088d5e2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4241434b5f544f5f544f502d3135313531353f7374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square" style="max-width: 100%;"></a></p>
 </div>
-
-#### Keep Updated
-
-If you have deployed your own project following the one-click deployment steps in the README, you might encounter constant prompts indicating "updates available." This is because Vercel defaults to creating a new project instead of forking this one, resulting in an inability to detect updates accurately.
-
-> \[!TIP]
->
-> We suggest you redeploy using the following steps, [📘 Maintaining Updates with LobeChat Self-Deployment](https://github.com/lobehub/lobe-chat/wiki/Upstream-Sync).
-
-<br/>
-
-### `B` Deploying with Docker
-
-[![][docker-release-shield]][docker-release-link]
-[![][docker-size-shield]][docker-size-link]
-[![][docker-pulls-shield]][docker-pulls-link]
-
-We provide a Docker image for deploying the LobeChat service on your own private device. Use the following command to start the LobeChat service:
-
-```fish
-$ docker run -d -p 3210:3210 \
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">⚡️ 性能</font></font></h2><a id="user-content-️-performance" class="anchor-element" aria-label="永久链接：⚡️ 性能" href="#️-performance"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-alert markdown-alert-note" dir="auto"><p class="markdown-alert-title" dir="auto"><svg class="octicon octicon-info mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><a href="https://github.com/lobehub/lobe-chat/wiki/Lighthouse"><font style="vertical-align: inherit;">完整的报告列表可以在📘灯塔报告</font></a><font style="vertical-align: inherit;">中找到</font></font><a href="https://github.com/lobehub/lobe-chat/wiki/Lighthouse"><font style="vertical-align: inherit;"></font></a></p>
+</div>
+<table>
+<thead>
+<tr>
+<th align="center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">桌面</font></font></th>
+<th align="center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">移动的</font></font></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://raw.githubusercontent.com/lobehub/lobe-chat/lighthouse/lighthouse/chat/desktop/pagespeed.svg"><img src="https://raw.githubusercontent.com/lobehub/lobe-chat/lighthouse/lighthouse/chat/desktop/pagespeed.svg" alt="" style="max-width: 100%;"></a></td>
+<td align="center"><a target="_blank" rel="noopener noreferrer nofollow" href="https://raw.githubusercontent.com/lobehub/lobe-chat/lighthouse/lighthouse/chat/mobile/pagespeed.svg"><img src="https://raw.githubusercontent.com/lobehub/lobe-chat/lighthouse/lighthouse/chat/mobile/pagespeed.svg" alt="" style="max-width: 100%;"></a></td>
+</tr>
+<tr>
+<td align="center"><a href="https://lobehub.github.io/lobe-chat/lighthouse/chat/desktop/chat_preview_lobehub_com_chat.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">📑 灯塔报告</font></font></a></td>
+<td align="center"><a href="https://lobehub.github.io/lobe-chat/lighthouse/chat/mobile/chat_preview_lobehub_com_chat.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">📑 灯塔报告</font></font></a></td>
+</tr>
+</tbody>
+</table>
+<div align="right" dir="auto">
+<p dir="auto"><a href="#readme-top"><img src="https://camo.githubusercontent.com/2f0317adbee7122ad7675fd6691766e0a6165510563511c3c334ac46a088d5e2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4241434b5f544f5f544f502d3135313531353f7374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square" style="max-width: 100%;"></a></p>
+</div>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🛳 自托管</font></font></h2><a id="user-content--self-hosting" class="anchor-element" aria-label="永久链接：🛳 自托管" href="#-self-hosting"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="https://hub.docker.com/r/lobehub/lobe-chat" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LobeChat 提供带有 Vercel 和Docker Image 的</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">自托管版本</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">这使您可以在几分钟内部署自己的聊天机器人，而无需任何先验知识。</font></font></p>
+<div class="markdown-alert markdown-alert-tip" dir="auto"><p class="markdown-alert-title" dir="auto"><svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">提示</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查看有关</font></font><a href="https://chat-docs.lobehub.com/en/self-hosting/start" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">📘 构建您自己的 LobeChat 的</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">更多信息。</font></font></p>
+</div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><code>A</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Vercel、Zeabur 或 Sealos 进行部署</font></font></h3><a id="user-content-a-deploying-with-vercel-zeabur-or-sealos" class="anchor-element" aria-label="永久链接：使用 Vercel、Zeabur 或 Sealos 进行部署" href="#a-deploying-with-vercel-zeabur-or-sealos"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您想在 Vercel 或 Zeabur 上自行部署此服务，可以按照以下步骤操作：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">准备您的</font></font><a href="https://platform.openai.com/account/api-keys" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OpenAI API 密钥</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">点击下面的按钮开始部署：直接用你的GitHub账号登录，记得填写</font><font style="vertical-align: inherit;">环境变量部分的</font></font><code>OPENAI_API_KEY</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（必填）和（推荐）。</font></font><code>ACCESS_CODE</code><font style="vertical-align: inherit;"></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">部署完成后，就可以开始使用了。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">绑定自定义域名（可选）：Vercel分配的域名的DNS在部分地区受到污染；</font><font style="vertical-align: inherit;">绑定自定义域名可以直接连接。</font></font></li>
+</ul>
+<div align="center" dir="auto">
+<table>
+<thead>
+<tr>
+<th align="center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Vercel 进行部署</font></font></th>
+<th align="center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Zeabur 进行部署</font></font></th>
+<th align="center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">与 Sealos 一起部署</font></font></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Flobehub%2Flobe-chat&amp;env=OPENAI_API_KEY,ACCESS_CODE&amp;envDescription=Find%20your%20OpenAI%20API%20Key%20by%20click%20the%20right%20Learn%20More%20button.%20%7C%20Access%20Code%20can%20protect%20your%20website&amp;envLink=https%3A%2F%2Fplatform.openai.com%2Faccount%2Fapi-keys&amp;project-name=lobe-chat&amp;repository-name=lobe-chat" rel="nofollow"><img src="https://camo.githubusercontent.com/0d115430c1db17132964386282927e5e313543c7d868fc06bc9a7c65d7ec974e/68747470733a2f2f76657263656c2e636f6d2f627574746f6e" alt="" data-canonical-src="https://vercel.com/button" style="max-width: 100%;"></a></td>
+<td align="center"><a href="https://zeabur.com/templates/VZGGTI" rel="nofollow"><img src="https://camo.githubusercontent.com/7bbd819d76b4e67c04fe4d8a0d9cc7220e691f3d2177f6e54f84689ba380184e/68747470733a2f2f7a65616275722e636f6d2f627574746f6e2e737667" alt="" data-canonical-src="https://zeabur.com/button.svg" style="max-width: 100%;"></a></td>
+<td align="center"><a href="https://cloud.sealos.io/?openapp=system-template%3FtemplateName%3Dlobe-chat" rel="nofollow"><img src="https://raw.githubusercontent.com/labring-actions/templates/main/Deploy-on-Sealos.svg" alt="" style="max-width: 100%;"></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">保持更新</font></font></h4><a id="user-content-keep-updated" class="anchor-element" aria-label="永久链接：保持更新" href="#keep-updated"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您按照 README 中的一键部署步骤部署了自己的项目，则可能会不断遇到“有更新可用”的提示。</font><font style="vertical-align: inherit;">这是因为 Vercel 默认创建一个新项目而不是分叉这个项目，导致无法准确检测更新。</font></font></p>
+<div class="markdown-alert markdown-alert-tip" dir="auto"><p class="markdown-alert-title" dir="auto"><svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">提示</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们建议您使用以下步骤重新部署，</font></font><a href="https://chat-docs.lobehub.com/en/self-hosting/advanced/upstream-sync" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">📘自动与最新同步</font></font></a></p>
+</div>
+<br>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><code>B</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Docker 进行部署</font></font></h3><a id="user-content-b-deploying-with-docker" class="anchor-element" aria-label="永久链接：B 使用 Docker 部署" href="#b-deploying-with-docker"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a href="https://hub.docker.com/r/lobehub/lobe-chat" rel="nofollow"><img src="https://camo.githubusercontent.com/7c3bafcf2ea6d169ec34d2f735ef84b8c7ea1451402c4f41f701294b5a330efb/68747470733a2f2f696d672e736869656c64732e696f2f646f636b65722f762f6c6f62656875622f6c6f62652d636861743f636f6c6f723d333639656666266c6162656c3d646f636b6572266c6162656c436f6c6f723d626c61636b266c6f676f3d646f636b6572266c6f676f436f6c6f723d7768697465267374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/docker/v/lobehub/lobe-chat?color=369eff&amp;label=docker&amp;labelColor=black&amp;logo=docker&amp;logoColor=white&amp;style=flat-square" style="max-width: 100%;"></a>
+<a href="https://hub.docker.com/r/lobehub/lobe-chat" rel="nofollow"><img src="https://camo.githubusercontent.com/38d94b4b90467a5ffa59fa01b9a9fcd627e667da0a119afa3c7009f5c425e33e/68747470733a2f2f696d672e736869656c64732e696f2f646f636b65722f696d6167652d73697a652f6c6f62656875622f6c6f62652d636861743f636f6c6f723d333639656666266c6162656c436f6c6f723d626c61636b267374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/docker/image-size/lobehub/lobe-chat?color=369eff&amp;labelColor=black&amp;style=flat-square" style="max-width: 100%;"></a>
+<a href="https://hub.docker.com/r/lobehub/lobe-chat" rel="nofollow"><img src="https://camo.githubusercontent.com/0ab5339b42d77f1a9a4eb290cb7ce32e61a0fbf805a7a6488db12b4bee42effa/68747470733a2f2f696d672e736869656c64732e696f2f646f636b65722f70756c6c732f6c6f62656875622f6c6f62652d636861743f636f6c6f723d343563633131266c6162656c436f6c6f723d626c61636b267374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/docker/pulls/lobehub/lobe-chat?color=45cc11&amp;labelColor=black&amp;style=flat-square" style="max-width: 100%;"></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们提供了一个 Docker 镜像，用于在您自己的私人设备上部署 LobeChat 服务。</font><font style="vertical-align: inherit;">使用以下命令启动 LobeChat 服务：</font></font></p>
+<div class="highlight highlight-source-fish notranslate position-relative overflow-auto" dir="auto"><pre>$ docker run <span class="pl-s">-d</span> <span class="pl-s">-p</span> 3210:3210 <span class="pl-cce">\</span>
+  <span class="pl-s">-e</span> OPENAI_API_KEY=sk-xxxx <span class="pl-cce">\</span>
+  <span class="pl-s">-e</span> ACCESS_CODE=lobe66 <span class="pl-cce">\</span>
+  <span class="pl-s">--name</span> lobe-chat <span class="pl-cce">\</span>
+  lobehub/lobe-chat</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="$ docker run -d -p 3210:3210 \
   -e OPENAI_API_KEY=sk-xxxx \
   -e ACCESS_CODE=lobe66 \
-  lobehub/lobe-chat
-```
-
-> \[!TIP]
->
-> If you need to use the OpenAI service through a proxy, you can configure the proxy address using the `OPENAI_PROXY_URL` environment variable:
-
-```fish
-$ docker run -d -p 3210:3210 \
+  --name lobe-chat \
+  lobehub/lobe-chat" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<div class="markdown-alert markdown-alert-tip" dir="auto"><p class="markdown-alert-title" dir="auto"><svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">提示</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果需要通过代理使用OpenAI服务，可以使用</font></font><code>OPENAI_PROXY_URL</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">环境变量配置代理地址：</font></font></p>
+</div>
+<div class="highlight highlight-source-fish notranslate position-relative overflow-auto" dir="auto"><pre>$ docker run <span class="pl-s">-d</span> <span class="pl-s">-p</span> 3210:3210 <span class="pl-cce">\</span>
+  <span class="pl-s">-e</span> OPENAI_API_KEY=sk-xxxx <span class="pl-cce">\</span>
+  <span class="pl-s">-e</span> OPENAI_PROXY_URL=https://api-proxy.com/v1 <span class="pl-cce">\</span>
+  <span class="pl-s">-e</span> ACCESS_CODE=lobe66 <span class="pl-cce">\</span>
+  <span class="pl-s">--name</span> lobe-chat <span class="pl-cce">\</span>
+  lobehub/lobe-chat</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="$ docker run -d -p 3210:3210 \
   -e OPENAI_API_KEY=sk-xxxx \
   -e OPENAI_PROXY_URL=https://api-proxy.com/v1 \
   -e ACCESS_CODE=lobe66 \
-  lobehub/lobe-chat
-```
-
-> \[!NOTE]
->
-> For detailed instructions on deploying with Docker, please refer to the [📘 Docker Deployment Guide](https://github.com/lobehub/lobe-chat/wiki/Docker-Deployment)
-
-<br/>
-
-### Environment Variable
-
-This project provides some additional configuration items set with environment variables:
-
-| Environment Variable      | Required | Description                                                                                                                                                                                                                  | Example                                                                                   |
-| ------------------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| `OPENAI_API_KEY`          | Yes      | This is the API key you apply on the OpenAI account page                                                                                                                                                                     | `sk-xxxxxx...xxxxxx`                                                                      |
-| `OPENAI_PROXY_URL`        | No       | If you manually configure the OpenAI interface proxy, you can use this configuration item to override the default OpenAI API request base URL                                                                                | `https://api.chatanywhere.cn/v1`<br/>The default value is<br/>`https://api.openai.com/v1` |
-| `OPENAI_FUNCTION_REGIONS` | No       | When you deploy Lobe-Chat using Vercel and need to specify the region for the Edge Function that handles requests to the OpenAI API, you can use this configuration. The value should be a comma-separated array of strings. | `iad1,sfo1`                                                                               |
-| `ACCESS_CODE`             | No       | Add a password to access this service; you can set a long password to avoid leaking. If this value contains a comma, it is a password array.                                                                                 | `awCTe)re_r74` or `rtrt_ewee3@09!` or `code1,code2,code3`                                 |
-
-> \[!NOTE]
->
-> The complete list of environment variables can be found in the [📘 Environment Variables](https://github.com/lobehub/lobe-chat/wiki/Environment-Variable)
-
-<div align="right">
-
-[![][back-to-top]](#readme-top)
-
+  --name lobe-chat \
+  lobehub/lobe-chat" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<div class="markdown-alert markdown-alert-note" dir="auto"><p class="markdown-alert-title" dir="auto"><svg class="octicon octicon-info mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有关使用 Docker 进行部署的详细说明，请参阅</font></font><a href="https://chat-docs.lobehub.com/en/self-hosting/platform/docker" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">📘 Docker 部署指南</font></font></a></p>
 </div>
-
-## 📦 Ecosystem
-
-| NPM                             | Repository                            | Description                                                                                                             | Version                                 |
-| ------------------------------- | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
-| [@lobehub/ui][lobe-ui-link]     | [lobehub/lobe-ui][lobe-ui-github]     | Lobe UI is an open-source UI component library dedicated to building AIGC web applications.                             | [![][lobe-ui-shield]][lobe-ui-link]     |
-| [@lobehub/tts][lobe-tts-link]   | [lobehub/lobe-tts][lobe-tts-github]   | Lobe TTS is a high-quality & reliable TTS/STT React Hooks library                                                       | [![][lobe-tts-shield]][lobe-tts-link]   |
-| [@lobehub/lint][lobe-lint-link] | [lobehub/lobe-lint][lobe-lint-github] | LobeLint provides configurations for ESlint, Stylelint, Commitlint, Prettier, Remark, and Semantic Release for LobeHub. | [![][lobe-lint-shield]][lobe-lint-link] |
-| @lobehub/assets                 | [lobehub/assets][lobe-assets-github]  | Logo assets, favicons, webfonts for LobeHub.                                                                            |                                         |
-
-<div align="right">
-
-[![][back-to-top]](#readme-top)
-
+<br>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">环境变量</font></font></h3><a id="user-content-environment-variable" class="anchor-element" aria-label="永久链接：环境变量" href="#environment-variable"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该项目提供了一些使用环境变量设置的附加配置项：</font></font></p>
+<table>
+<thead>
+<tr>
+<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">环境变量</font></font></th>
+<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">必需的</font></font></th>
+<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">描述</font></font></th>
+<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">例子</font></font></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>OPENAI_API_KEY</code></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">是的</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这是您在 OpenAI 账户页面申请的 API 密钥</font></font></td>
+<td><code>sk-xxxxxx...xxxxxx</code></td>
+</tr>
+<tr>
+<td><code>OPENAI_PROXY_URL</code></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">不</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果手动配置OpenAI接口代理，可以使用该配置项覆盖默认的OpenAI API请求基URL</font></font></td>
+<td><code>https://api.chatanywhere.cn</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或</font></font><code>https://aihubmix.com/v1</code> <br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">默认值为</font></font><br><code>https://api.openai.com/v1</code></td>
+</tr>
+<tr>
+<td><code>ACCESS_CODE</code></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">不</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">添加访问此服务的密码；</font><font style="vertical-align: inherit;">您可以设置一个长密码以避免泄露。</font><font style="vertical-align: inherit;">如果该值包含逗号，则它是密码数组。</font></font></td>
+<td><code>awCTe)re_r74</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或</font></font><code>rtrt_ewee3@09!</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或</font></font><code>code1,code2,code3</code></td>
+</tr>
+<tr>
+<td><code>CUSTOM_MODELS</code></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">不</font></font></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用于控制模型列表。</font><font style="vertical-align: inherit;">用于</font></font><code>+</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">添加模型、</font></font><code>-</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">隐藏模型以及</font></font><code>model_name=display_name</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">自定义模型的显示名称（以逗号分隔）。</font></font></td>
+<td><code>qwen-7b-chat,+glm-6b,-gpt-3.5-turbo</code></td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-alert markdown-alert-note" dir="auto"><p class="markdown-alert-title" dir="auto"><svg class="octicon octicon-info mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><a href="https://chat-docs.lobehub.com/en/self-hosting/environment-variables" rel="nofollow"><font style="vertical-align: inherit;">环境变量的完整列表可以在📘 环境变量</font></a><font style="vertical-align: inherit;">中找到</font></font><a href="https://chat-docs.lobehub.com/en/self-hosting/environment-variables" rel="nofollow"><font style="vertical-align: inherit;"></font></a></p>
 </div>
-
-## 🧩 Plugins
-
-Plugins provide a means to extend the [Function Calling][fc-link] capabilities of LobeChat. They can be used to introduce new function calls and even new ways to render message results. If you are interested in plugin development, please refer to our [📘 Plugin Development Guide](https://github.com/lobehub/lobe-chat/wiki/Plugin-Development) in the Wiki.
-
-- [lobe-chat-plugins][lobe-chat-plugins]: This is the plugin index for LobeChat. It accesses index.json from this repository to display a list of available plugins for LobeChat to the user.
-- [chat-plugin-template][chat-plugin-template]: This is the plugin template for LobeChat plugin development.
-- [@lobehub/chat-plugin-sdk][chat-plugin-sdk]: The LobeChat Plugin SDK assists you in creating exceptional chat plugins for Lobe Chat.
-- [@lobehub/chat-plugins-gateway][chat-plugins-gateway]: The LobeChat Plugins Gateway is a backend service that provides a gateway for LobeChat plugins. We deploy this service using Vercel. The primary API POST /api/v1/runner is deployed as an Edge Function.
-
-> \[!NOTE]
->
-> The plugin system is currently undergoing major development. You can learn more in the following issues:
->
-> - [x] [**Plugin Phase 1**](https://github.com/lobehub/lobe-chat/issues/73): Implement separation of the plugin from the main body, split the plugin into an independent repository for maintenance, and realize dynamic loading of the plugin.
-> - [x] [**Plugin Phase 2**](https://github.com/lobehub/lobe-chat/issues/97): The security and stability of the plugin's use, more accurately presenting abnormal states, the maintainability of the plugin architecture, and developer-friendly.
-> - [ ] [**Plugin Phase 3**](https://github.com/lobehub/lobe-chat/issues/149): Higher-level and more comprehensive customization capabilities, support for plugin authentication, and examples.
-
-<div align="right">
-
-[![][back-to-top]](#readme-top)
-
+<div align="right" dir="auto">
+<p dir="auto"><a href="#readme-top"><img src="https://camo.githubusercontent.com/2f0317adbee7122ad7675fd6691766e0a6165510563511c3c334ac46a088d5e2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4241434b5f544f5f544f502d3135313531353f7374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square" style="max-width: 100%;"></a></p>
 </div>
-
-## ⌨️ Local Development
-
-You can use GitHub Codespaces for online development:
-
-[![][codespaces-shield]][codespaces-link]
-
-Or clone it for local development:
-
-[![][bun-shield]][bun-link]
-
-```fish
-$ git clone https://github.com/lobehub/lobe-chat.git
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">📦 生态系统</font></font></h2><a id="user-content--ecosystem" class="anchor-element" aria-label="永久链接：📦生态系统" href="#-ecosystem"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<table>
+<thead>
+<tr>
+<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">国家公共管理</font></font></th>
+<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">存储库</font></font></th>
+<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">描述</font></font></th>
+<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">版本</font></font></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.npmjs.com/package/@lobehub/ui" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">@lobehub/ui</font></font></a></td>
+<td><a href="https://github.com/lobehub/lobe-ui"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">lobehub/lobe-ui</font></font></a></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">致力于构建 AIGC Web 应用程序的开源 UI 组件库。</font></font></td>
+<td><a href="https://www.npmjs.com/package/@lobehub/ui" rel="nofollow"><img src="https://camo.githubusercontent.com/7ff24c5d00f413bb8c33407e97e7e461a604709290003f78c707e8d74239cbf3/68747470733a2f2f696d672e736869656c64732e696f2f6e706d2f762f406c6f62656875622f75693f636f6c6f723d333639656666266c6162656c436f6c6f723d626c61636b266c6f676f3d6e706d266c6f676f436f6c6f723d7768697465267374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/npm/v/@lobehub/ui?color=369eff&amp;labelColor=black&amp;logo=npm&amp;logoColor=white&amp;style=flat-square" style="max-width: 100%;"></a></td>
+</tr>
+<tr>
+<td><a href="https://www.npmjs.com/package/@lobehub/icons" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">@lobehub/图标</font></font></a></td>
+<td><a href="https://github.com/lobehub/lobe-icons"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">lobehub/lobe-icons</font></font></a></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">流行的 AI / LLM 模型品牌 SVG 徽标和图标集合。</font></font></td>
+<td><a href="https://www.npmjs.com/package/@lobehub/icons" rel="nofollow"><img src="https://camo.githubusercontent.com/aa855ba9518340cd21e00e3b494206c315ac07db255b98f763d20e64175dd994/68747470733a2f2f696d672e736869656c64732e696f2f6e706d2f762f406c6f62656875622f69636f6e733f636f6c6f723d333639656666266c6162656c436f6c6f723d626c61636b266c6f676f3d6e706d266c6f676f436f6c6f723d7768697465267374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/npm/v/@lobehub/icons?color=369eff&amp;labelColor=black&amp;logo=npm&amp;logoColor=white&amp;style=flat-square" style="max-width: 100%;"></a></td>
+</tr>
+<tr>
+<td><a href="https://www.npmjs.com/package/@lobehub/tts" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">@lobehub/tts</font></font></a></td>
+<td><a href="https://github.com/lobehub/lobe-tts"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">洛贝枢纽/洛贝-tts</font></font></a></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">高质量且可靠的 TTS/STT React Hooks 库</font></font></td>
+<td><a href="https://www.npmjs.com/package/@lobehub/tts" rel="nofollow"><img src="https://camo.githubusercontent.com/743f8c88137908939719fed50c2742f2e4d37c1176b46d4c3ffd701f4c48f399/68747470733a2f2f696d672e736869656c64732e696f2f6e706d2f762f406c6f62656875622f7474733f636f6c6f723d333639656666266c6162656c436f6c6f723d626c61636b266c6f676f3d6e706d266c6f676f436f6c6f723d7768697465267374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/npm/v/@lobehub/tts?color=369eff&amp;labelColor=black&amp;logo=npm&amp;logoColor=white&amp;style=flat-square" style="max-width: 100%;"></a></td>
+</tr>
+<tr>
+<td><a href="https://www.npmjs.com/package/@lobehub/lint" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">@lobehub/lint</font></font></a></td>
+<td><a href="https://github.com/lobehub/lobe-lint"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">洛贝枢纽/洛贝林特</font></font></a></td>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LobeHub 的 ESlint、Stylelint、Commitlint、Prettier、Remark 和语义发布的配置。</font></font></td>
+<td><a href="https://www.npmjs.com/package/@lobehub/lint" rel="nofollow"><img src="https://camo.githubusercontent.com/8d0bdc56f6d57cb51fe8817105f86f60e3fe76d9829b4c9c7ba85b16e6bf96b3/68747470733a2f2f696d672e736869656c64732e696f2f6e706d2f762f406c6f62656875622f6c696e743f636f6c6f723d333639656666266c6162656c436f6c6f723d626c61636b266c6f676f3d6e706d266c6f676f436f6c6f723d7768697465267374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/npm/v/@lobehub/lint?color=369eff&amp;labelColor=black&amp;logo=npm&amp;logoColor=white&amp;style=flat-square" style="max-width: 100%;"></a></td>
+</tr>
+</tbody>
+</table>
+<div align="right" dir="auto">
+<p dir="auto"><a href="#readme-top"><img src="https://camo.githubusercontent.com/2f0317adbee7122ad7675fd6691766e0a6165510563511c3c334ac46a088d5e2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4241434b5f544f5f544f502d3135313531353f7374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square" style="max-width: 100%;"></a></p>
+</div>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🧩 插件</font></font></h2><a id="user-content--plugins" class="anchor-element" aria-label="永久链接：🧩 插件" href="#-plugins"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">插件提供了一种扩展</font><font style="vertical-align: inherit;">LobeChat</font></font><a href="https://platform.openai.com/docs/guides/function-calling" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">函数调用功能的方法。</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">它们可用于引入新的函数调用，甚至是呈现消息结果的新方法。</font><font style="vertical-align: inherit;">如果您对插件开发感兴趣，请参阅</font><font style="vertical-align: inherit;">Wiki 中的</font></font><a href="https://chat-docs.lobehub.com/en/usage/plugins/development" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">📘插件开发指南。</font></font></a><font style="vertical-align: inherit;"></font></p>
+<ul dir="auto">
+<li><a href="https://github.com/lobehub/lobe-chat-plugins"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">lobe-chat-plugins</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：这是 LobeChat 的插件索引。</font><font style="vertical-align: inherit;">它从此存储库访问index.json，以向用户显示 LobeChat 的可用插件列表。</font></font></li>
+<li><a href="https://github.com/lobehub/chat-plugin-template"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">chat-plugin-template</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：这是 LobeChat 插件开发的插件模板。</font></font></li>
+<li><a href="https://github.com/lobehub/chat-plugin-sdk"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">@lobehub/chat-plugin-sdk</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：LobeChat 插件 SDK 可帮助您为 Lobe Chat 创建出色的聊天插件。</font></font></li>
+<li><a href="https://github.com/lobehub/chat-plugins-gateway"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">@lobehub/chat-plugins-gateway</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：LobeChat 插件网关是一项后端服务，为 LobeChat 插件提供网关。</font><font style="vertical-align: inherit;">我们使用 Vercel 部署此服务。</font><font style="vertical-align: inherit;">主要 API POST /api/v1/runner 部署为边缘函数。</font></font></li>
+</ul>
+<div class="markdown-alert markdown-alert-note" dir="auto"><p class="markdown-alert-title" dir="auto"><svg class="octicon octicon-info mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">插件系统目前正在进行重大开发。</font><font style="vertical-align: inherit;">您可以在以下问题中了解更多信息：</font></font></p>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> <a href="https://github.com/lobehub/lobe-chat/issues/73" data-hovercard-type="issue" data-hovercard-url="/lobehub/lobe-chat/issues/73/hovercard"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">插件阶段一</font></font></strong></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：实现插件与主体分离，将插件拆分到独立的仓库进行维护，并实现插件的动态加载。</font></font></li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> <a href="https://github.com/lobehub/lobe-chat/issues/97" data-hovercard-type="issue" data-hovercard-url="/lobehub/lobe-chat/issues/97/hovercard"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">插件阶段2</font></font></strong></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：插件使用的安全性和稳定性，更准确地呈现异常状态，插件架构的可维护性，开发者友好性。</font></font></li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> <a href="https://github.com/lobehub/lobe-chat/issues/149" data-hovercard-type="issue" data-hovercard-url="/lobehub/lobe-chat/issues/149/hovercard"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">插件阶段3</font></font></strong></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：更高层次、更全面的定制能力，支持插件认证，以及示例。</font></font></li>
+</ul>
+</div>
+<div align="right" dir="auto">
+<p dir="auto"><a href="#readme-top"><img src="https://camo.githubusercontent.com/2f0317adbee7122ad7675fd6691766e0a6165510563511c3c334ac46a088d5e2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4241434b5f544f5f544f502d3135313531353f7374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square" style="max-width: 100%;"></a></p>
+</div>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">⌨️ 本地发展</font></font></h2><a id="user-content-️-local-development" class="anchor-element" aria-label="永久链接：⌨️地方发展" href="#️-local-development"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以使用GitHub Codespaces进行在线开发：</font></font></p>
+<p dir="auto"><a href="https://codespaces.new/lobehub/lobe-chat" rel="nofollow"><img src="https://github.com/codespaces/badge.svg" alt="" style="max-width: 100%;"></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或者克隆它以进行本地开发：</font></font></p>
+<div class="highlight highlight-source-fish notranslate position-relative overflow-auto" dir="auto"><pre>$ git clone https://github.com/lobehub/lobe-chat.git
+$ <span class="pl-c1">cd</span> lobe-chat
+$ pnpm install
+$ pnpm dev</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="$ git clone https://github.com/lobehub/lobe-chat.git
 $ cd lobe-chat
-$ bun install
-$ bun dev
-```
-
-<div align="right">
-
-[![][back-to-top]](#readme-top)
-
+$ pnpm install
+$ pnpm dev" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您想了解更多详细信息，请随时查看我们的</font></font><a href="https://github.com/lobehub/lobe-chat/wiki/index"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">📘开发指南</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<div align="right" dir="auto">
+<p dir="auto"><a href="#readme-top"><img src="https://camo.githubusercontent.com/2f0317adbee7122ad7675fd6691766e0a6165510563511c3c334ac46a088d5e2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4241434b5f544f5f544f502d3135313531353f7374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square" style="max-width: 100%;"></a></p>
 </div>
-
-## 🤝 Contributing
-
-Contributions of all types are more than welcome; if you are interested in contributing code, feel free to check out our GitHub [Issues][github-issues-link] and [Projects][github-project-link] to get stuck in to show us what you’re made of.
-
-[![][pr-welcome-shield]][pr-welcome-link]
-[![][submit-agents-shield]][submit-agents-link]
-[![][submit-plugin-shield]][submit-plugin-link]
-
-<a href="https://github.com/lobehub/lobe-chat/graphs/contributors" target="_blank">
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🤝 贡献</font></font></h2><a id="user-content--contributing" class="anchor-element" aria-label="永久链接：🤝 贡献" href="#-contributing"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们非常欢迎所有类型的贡献；</font><font style="vertical-align: inherit;">如果您有兴趣贡献代码，请随时查看我们的 GitHub</font></font><a href="https://github.com/lobehub/lobe-chat/issues"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">问题</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><a href="https://github.com/lobehub/lobe-chat/projects"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">项目</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，向我们展示您的能力。</font></font></p>
+<div class="markdown-alert markdown-alert-tip" dir="auto"><p class="markdown-alert-title" dir="auto"><svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">提示</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们正在创建一个技术驱动的论坛，促进知识互动和思想交流，最终实现相互启发和协作创新。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">帮助我们让 LobeChat 变得更好。</font><font style="vertical-align: inherit;">欢迎直接向我们提供产品设计反馈、用户体验讨论。</font></font></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">主要维护者：</font></font></strong> <a href="https://github.com/arvinxx"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">@arvinxx </font></font></a> <a href="https://github.com/canisminor1990"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">@canisminor1990</font></font></a></p>
+</div>
+<p dir="auto"><a href="https://github.com/lobehub/lobe-chat/pulls"><img src="https://camo.githubusercontent.com/5a1472d5f2a15072f50a22a371c8309693c9d9dcb224ead120a3b6a26755de5c/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2546302539462541342541465f70725f77656c636f6d652d2545322538362539322d6666636234373f6c6162656c436f6c6f723d626c61636b267374796c653d666f722d7468652d6261646765" alt="" data-canonical-src="https://img.shields.io/badge/%F0%9F%A4%AF_pr_welcome-%E2%86%92-ffcb47?labelColor=black&amp;style=for-the-badge" style="max-width: 100%;"></a>
+<a href="https://github.com/lobehub/lobe-chat-agents"><img src="https://camo.githubusercontent.com/d662f68daefffc0957050dcacb0958d46de8336504604453fc1cd6ccc0820232/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2546302539462541342539362f2546302539462538462541415f7375626d69745f6167656e742d2545322538362539322d6334663034323f6c6162656c436f6c6f723d626c61636b267374796c653d666f722d7468652d6261646765" alt="" data-canonical-src="https://img.shields.io/badge/%F0%9F%A4%96/%F0%9F%8F%AA_submit_agent-%E2%86%92-c4f042?labelColor=black&amp;style=for-the-badge" style="max-width: 100%;"></a>
+<a href="https://github.com/lobehub/lobe-chat-plugins"><img src="https://camo.githubusercontent.com/162390688fa35ef3f7443aceb2cbb3ef087edea148a1a72f4e8104b83c922c69/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2546302539462541372541392f2546302539462538462541415f7375626d69745f706c7567696e2d2545322538362539322d3935663364393f6c6162656c436f6c6f723d626c61636b267374796c653d666f722d7468652d6261646765" alt="" data-canonical-src="https://img.shields.io/badge/%F0%9F%A7%A9/%F0%9F%8F%AA_submit_plugin-%E2%86%92-95f3d9?labelColor=black&amp;style=for-the-badge" style="max-width: 100%;"></a></p>
+<a href="https://github.com/lobehub/lobe-chat/graphs/contributors">
   <table>
-    <tr>
+    <tbody><tr>
       <th colspan="2">
-        <br><img src="https://contrib.rocks/image?repo=lobehub/lobe-chat"><br><br>
+        <br><img src="https://camo.githubusercontent.com/a52c428d01a83e25d6513a4f5d225894958a241f7a362ac11b3e98d0c598be9d/68747470733a2f2f636f6e747269622e726f636b732f696d6167653f7265706f3d6c6f62656875622f6c6f62652d63686174" data-canonical-src="https://contrib.rocks/image?repo=lobehub/lobe-chat" style="max-width: 100%;"><br><br>
       </th>
     </tr>
     <tr>
       <td>
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://next.ossinsight.io/widgets/official/compose-org-active-contributors/thumbnail.png?activity=active&period=past_28_days&owner_id=131470832&repo_ids=643445235&image_size=2x3&color_scheme=dark">
-          <img src="https://next.ossinsight.io/widgets/official/compose-org-active-contributors/thumbnail.png?activity=active&period=past_28_days&owner_id=131470832&repo_ids=643445235&image_size=2x3&color_scheme=light">
-        </picture>
+        <themed-picture data-catalyst-inline="true" data-catalyst=""><picture>
+          <source media="(prefers-color-scheme: dark)" srcset="https://camo.githubusercontent.com/b84006eef558395169bd25c670d7b7ec156ad802e37dbb0fcd0d6bacc83077bd/68747470733a2f2f6e6578742e6f7373696e73696768742e696f2f776964676574732f6f6666696369616c2f636f6d706f73652d6f72672d6163746976652d636f6e7472696275746f72732f7468756d626e61696c2e706e673f61637469766974793d61637469766526706572696f643d706173745f32385f64617973266f776e65725f69643d313331343730383332267265706f5f6964733d36343334343532333526696d6167655f73697a653d32783326636f6c6f725f736368656d653d6461726b" data-canonical-src="https://next.ossinsight.io/widgets/official/compose-org-active-contributors/thumbnail.png?activity=active&amp;period=past_28_days&amp;owner_id=131470832&amp;repo_ids=643445235&amp;image_size=2x3&amp;color_scheme=dark">
+          <img src="https://camo.githubusercontent.com/fef4f43f7d6c2877dbf7bfeb2cf2b4a36a13b07df2e4ce87f1f2d4eb2ebee90a/68747470733a2f2f6e6578742e6f7373696e73696768742e696f2f776964676574732f6f6666696369616c2f636f6d706f73652d6f72672d6163746976652d636f6e7472696275746f72732f7468756d626e61696c2e706e673f61637469766974793d61637469766526706572696f643d706173745f32385f64617973266f776e65725f69643d313331343730383332267265706f5f6964733d36343334343532333526696d6167655f73697a653d32783326636f6c6f725f736368656d653d6c69676874" data-canonical-src="https://next.ossinsight.io/widgets/official/compose-org-active-contributors/thumbnail.png?activity=active&amp;period=past_28_days&amp;owner_id=131470832&amp;repo_ids=643445235&amp;image_size=2x3&amp;color_scheme=light" style="visibility:visible;max-width:100%;">
+        </picture></themed-picture>
       </td>
       <td rowspan="2">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://next.ossinsight.io/widgets/official/compose-org-participants-growth/thumbnail.png?activity=active&period=past_28_days&owner_id=131470832&repo_ids=643445235&image_size=4x7&color_scheme=dark">
-          <img src="https://next.ossinsight.io/widgets/official/compose-org-participants-growth/thumbnail.png?activity=active&period=past_28_days&owner_id=131470832&repo_ids=643445235&image_size=4x7&color_scheme=light">
-        </picture>
+        <themed-picture data-catalyst-inline="true" data-catalyst=""><picture>
+          <source media="(prefers-color-scheme: dark)" srcset="https://camo.githubusercontent.com/fc0f14e9c5e59386f76ada9bc5f18246ce5405f686522657ce6b15d67cfed2a1/68747470733a2f2f6e6578742e6f7373696e73696768742e696f2f776964676574732f6f6666696369616c2f636f6d706f73652d6f72672d7061727469636970616e74732d67726f7774682f7468756d626e61696c2e706e673f61637469766974793d61637469766526706572696f643d706173745f32385f64617973266f776e65725f69643d313331343730383332267265706f5f6964733d36343334343532333526696d6167655f73697a653d34783726636f6c6f725f736368656d653d6461726b" data-canonical-src="https://next.ossinsight.io/widgets/official/compose-org-participants-growth/thumbnail.png?activity=active&amp;period=past_28_days&amp;owner_id=131470832&amp;repo_ids=643445235&amp;image_size=4x7&amp;color_scheme=dark">
+          <img src="https://camo.githubusercontent.com/522d4c83777ea415b088c915171656de7fa7a364dae5d5bf5365398b3977f838/68747470733a2f2f6e6578742e6f7373696e73696768742e696f2f776964676574732f6f6666696369616c2f636f6d706f73652d6f72672d7061727469636970616e74732d67726f7774682f7468756d626e61696c2e706e673f61637469766974793d61637469766526706572696f643d706173745f32385f64617973266f776e65725f69643d313331343730383332267265706f5f6964733d36343334343532333526696d6167655f73697a653d34783726636f6c6f725f736368656d653d6c69676874" data-canonical-src="https://next.ossinsight.io/widgets/official/compose-org-participants-growth/thumbnail.png?activity=active&amp;period=past_28_days&amp;owner_id=131470832&amp;repo_ids=643445235&amp;image_size=4x7&amp;color_scheme=light" style="visibility:visible;max-width:100%;">
+        </picture></themed-picture>
       </td>
     </tr>
     <tr>
       <td>
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://next.ossinsight.io/widgets/official/compose-org-active-contributors/thumbnail.png?activity=new&period=past_28_days&owner_id=131470832&repo_ids=643445235&image_size=2x3&color_scheme=dark">
-          <img src="https://next.ossinsight.io/widgets/official/compose-org-active-contributors/thumbnail.png?activity=new&period=past_28_days&owner_id=131470832&repo_ids=643445235&image_size=2x3&color_scheme=light">
-        </picture>
+        <themed-picture data-catalyst-inline="true" data-catalyst=""><picture>
+          <source media="(prefers-color-scheme: dark)" srcset="https://camo.githubusercontent.com/384e42d76a5ec5db2a4a244735268191550355cf230d2c90eb789144a79482b0/68747470733a2f2f6e6578742e6f7373696e73696768742e696f2f776964676574732f6f6666696369616c2f636f6d706f73652d6f72672d6163746976652d636f6e7472696275746f72732f7468756d626e61696c2e706e673f61637469766974793d6e657726706572696f643d706173745f32385f64617973266f776e65725f69643d313331343730383332267265706f5f6964733d36343334343532333526696d6167655f73697a653d32783326636f6c6f725f736368656d653d6461726b" data-canonical-src="https://next.ossinsight.io/widgets/official/compose-org-active-contributors/thumbnail.png?activity=new&amp;period=past_28_days&amp;owner_id=131470832&amp;repo_ids=643445235&amp;image_size=2x3&amp;color_scheme=dark">
+          <img src="https://camo.githubusercontent.com/70ad68565ab08d5d75e3f805494b046395573a44a76d5daa7deed603b7782167/68747470733a2f2f6e6578742e6f7373696e73696768742e696f2f776964676574732f6f6666696369616c2f636f6d706f73652d6f72672d6163746976652d636f6e7472696275746f72732f7468756d626e61696c2e706e673f61637469766974793d6e657726706572696f643d706173745f32385f64617973266f776e65725f69643d313331343730383332267265706f5f6964733d36343334343532333526696d6167655f73697a653d32783326636f6c6f725f736368656d653d6c69676874" data-canonical-src="https://next.ossinsight.io/widgets/official/compose-org-active-contributors/thumbnail.png?activity=new&amp;period=past_28_days&amp;owner_id=131470832&amp;repo_ids=643445235&amp;image_size=2x3&amp;color_scheme=light" style="visibility:visible;max-width:100%;">
+        </picture></themed-picture>
       </td>
     </tr>
-  </table>
+  </tbody></table>
 </a>
-
-<div align="right">
-
-[![][back-to-top]](#readme-top)
-
+<div align="right" dir="auto">
+<p dir="auto"><a href="#readme-top"><img src="https://camo.githubusercontent.com/2f0317adbee7122ad7675fd6691766e0a6165510563511c3c334ac46a088d5e2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4241434b5f544f5f544f502d3135313531353f7374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square" style="max-width: 100%;"></a></p>
 </div>
-
-## 🩷 Sponsor
-
-Every bit counts and your one-time donation sparkles in our galaxy of support! You're a shooting star, making a swift and bright impact on our journey. Thank you for believing in us – your generosity guides us toward our mission, one brilliant flash at a time.
-
-<a href="https://opencollective.com/lobehub" target="_blank">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/lobehub/.github/blob/main/static/sponsor-dark.png?raw=true">
-    <img  src="https://github.com/lobehub/.github/blob/main/static/sponsor-light.png?raw=true">
-  </picture>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">❤️赞助商</font></font></h2><a id="user-content-️-sponsor" class="anchor-element" aria-label="永久链接：❤️ 赞助商" href="#️-sponsor"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">每一点都很重要，您的一次性捐款在我们的支持中闪闪发光！</font><font style="vertical-align: inherit;">你是一颗流星，对我们的旅程产生迅速而明亮的影响。</font><font style="vertical-align: inherit;">感谢您对我们的信任——您的慷慨引导我们实现我们的使命，一次辉煌的闪光。</font></font></p>
+<a href="https://opencollective.com/lobehub" rel="nofollow">
+  <themed-picture data-catalyst-inline="true" data-catalyst=""><picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/lobehub/.github/raw/main/static/sponsor-dark.png?raw=true">
+    <img src="https://github.com/lobehub/.github/raw/main/static/sponsor-light.png?raw=true" style="visibility:visible;max-width:100%;">
+  </picture></themed-picture>
 </a>
-
-<div align="right">
-
-[![][back-to-top]](#readme-top)
-
+<div align="right" dir="auto">
+<p dir="auto"><a href="#readme-top"><img src="https://camo.githubusercontent.com/2f0317adbee7122ad7675fd6691766e0a6165510563511c3c334ac46a088d5e2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4241434b5f544f5f544f502d3135313531353f7374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square" style="max-width: 100%;"></a></p>
 </div>
-
-## 🔗 More Products
-
-- **[🤯 Lobe Theme][lobe-theme]:** The modern theme for Stable Diffusion WebUI, exquisite interface design, highly customizable UI, and efficiency-boosting features.
-- **[🌏 Lobe i18n][lobe-i18n] :** Lobe i18n is an automation tool for the i18n (internationalization) translation process, powered by ChatGPT. It supports features such as automatic splitting of large files, incremental updates, and customization options for the OpenAI model, API proxy, and temperature.
-- **[💌 Lobe Commit][lobe-commit]:** Lobe Commit is a CLI tool that leverages Langchain/ChatGPT to generate Gitmoji-based commit messages.
-
-<div align="right">
-
-[![][back-to-top]](#readme-top)
-
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗 更多产品</font></font></h2><a id="user-content--more-products" class="anchor-element" aria-label="永久链接：🔗更多产品" href="#-more-products"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><strong><a href="https://github.com/lobehub/sd-webui-lobe-theme"><g-emoji class="g-emoji" alias="a"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🅰️</font></font></g-emoji><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Lobe SD 主题</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">稳定 Diffusion WebUI 的现代主题，精美的界面设计，高度可定制的 UI 和提高效率的功能。</font></font></li>
+<li><strong><a href="https://github.com/lobehub/lobe-midjourney-webui"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">⛵️ Lobe Midjourney WebUI</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Midjourney 的 WebUI，利用人工智能根据文本提示快速生成各种丰富多样的图像，激发创造力并增强对话。</font></font></li>
+<li><strong><a href="https://github.com/lobehub/lobe-commit/tree/master/packages/lobe-i18n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🌏 Lobe i18n</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Lobe i18n 是一个用于 i18n（国际化）翻译过程的自动化工具，由 ChatGPT 提供支持。</font><font style="vertical-align: inherit;">它支持大文件自动拆分、增量更新以及 OpenAI 模型、API 代理和温度的自定义选项等功能。</font></font></li>
+<li><strong><a href="https://github.com/lobehub/lobe-commit/tree/master/packages/lobe-commit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">💌 Lobe Commit</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Lobe Commit 是一个 CLI 工具，利用 Langchain/ChatGPT 生成基于 Gitmoji 的提交消息。</font></font></li>
+</ul>
+<div align="right" dir="auto">
+<p dir="auto"><a href="#readme-top"><img src="https://camo.githubusercontent.com/2f0317adbee7122ad7675fd6691766e0a6165510563511c3c334ac46a088d5e2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4241434b5f544f5f544f502d3135313531353f7374796c653d666c61742d737175617265" alt="" data-canonical-src="https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square" style="max-width: 100%;"></a></p>
 </div>
-
----
-
-<details><summary><h4>📝 License</h4></summary>
-
-[![][fossa-license-shield]][fossa-license-link]
-
+<hr>
+<details><summary><div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">📝 许可证</font></font></h4><a id="user-content--license" class="anchor-element" aria-label="永久链接：📝 许可证" href="#-license"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div></summary>
+<p dir="auto"><a href="https://app.fossa.com/projects/git%2Bgithub.com%2Flobehub%2Flobe-chat" rel="nofollow"><img src="https://camo.githubusercontent.com/d6781c638fb10be861159709862a763c6e7c40451d0396b5db1ae4801e1616c4/68747470733a2f2f6170702e666f7373612e636f6d2f6170692f70726f6a656374732f6769742532426769746875622e636f6d2532466c6f62656875622532466c6f62652d636861742e7376673f747970653d6c61726765" alt="" data-canonical-src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Flobehub%2Flobe-chat.svg?type=large" style="max-width: 100%;"></a></p>
 </details>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">版权所有 © 2023 </font></font><a href="https://github.com/lobehub"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LobeHub</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+该项目已获得</font></font><a href="/lobehub/lobe-chat/blob/main/LICENSE"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">麻省理工学院</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">许可。</font></font></p>
 
-Copyright © 2023 [LobeHub][profile-link]. <br />
-This project is [MIT](./LICENSE) licensed.
-
-<!-- LINK GROUP -->
-
-[back-to-top]: https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square
-[bun-link]: https://bun.sh
-[bun-shield]: https://img.shields.io/badge/-speedup%20with%20bun-black?logo=bun&style=for-the-badge
-[chat-desktop]: https://raw.githubusercontent.com/lobehub/lobe-chat/lighthouse/lighthouse/chat/desktop/pagespeed.svg
-[chat-desktop-report]: https://lobehub.github.io/lobe-chat/lighthouse/chat/desktop/chat_preview_lobehub_com_chat.html
-[chat-mobile]: https://raw.githubusercontent.com/lobehub/lobe-chat/lighthouse/lighthouse/chat/mobile/pagespeed.svg
-[chat-mobile-report]: https://lobehub.github.io/lobe-chat/lighthouse/chat/mobile/chat_preview_lobehub_com_chat.html
-[chat-plugin-sdk]: https://github.com/lobehub/chat-plugin-sdk
-[chat-plugin-template]: https://github.com/lobehub/chat-plugin-template
-[chat-plugins-gateway]: https://github.com/lobehub/chat-plugins-gateway
-[codespaces-link]: https://codespaces.new/lobehub/lobe-chat
-[codespaces-shield]: https://github.com/codespaces/badge.svg
-[deploy-button-image]: https://vercel.com/button
-[deploy-link]: https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Flobehub%2Flobe-chat&env=OPENAI_API_KEY&envDescription=Find%20your%20OpenAI%20API%20Key%20by%20click%20the%20right%20Learn%20More%20button.&envLink=https%3A%2F%2Fplatform.openai.com%2Faccount%2Fapi-keys&project-name=lobe-chat&repository-name=lobe-chat
-[deploy-on-sealos-button-image]: https://raw.githubusercontent.com/labring-actions/templates/main/Deploy-on-Sealos.svg
-[deploy-on-sealos-link]: https://cloud.sealos.io/?openapp=system-template%3FtemplateName%3Dlobe-chat
-[deploy-on-zeabur-button-image]: https://zeabur.com/button.svg
-[deploy-on-zeabur-link]: https://zeabur.com/templates/VZGGTI
-[discord-link]: https://discord.gg/AYFPHvv2jT
-[discord-shield]: https://img.shields.io/discord/1127171173982154893?color=5865F2&label=discord&labelColor=black&logo=discord&logoColor=white&style=flat-square
-[discord-shield-badge]: https://img.shields.io/discord/1127171173982154893?color=5865F2&label=discord&labelColor=black&logo=discord&logoColor=white&style=for-the-badge
-[docker-pulls-link]: https://hub.docker.com/r/lobehub/lobe-chat
-[docker-pulls-shield]: https://img.shields.io/docker/pulls/lobehub/lobe-chat?color=45cc11&labelColor=black&style=flat-square
-[docker-release-link]: https://hub.docker.com/r/lobehub/lobe-chat
-[docker-release-shield]: https://img.shields.io/docker/v/lobehub/lobe-chat?color=369eff&label=docker&labelColor=black&logo=docker&logoColor=white&style=flat-square
-[docker-size-link]: https://hub.docker.com/r/lobehub/lobe-chat
-[docker-size-shield]: https://img.shields.io/docker/image-size/lobehub/lobe-chat?color=369eff&labelColor=black&style=flat-square
-[fc-link]: https://sspai.com/post/81986
-[fossa-license-link]: https://app.fossa.com/projects/git%2Bgithub.com%2Flobehub%2Flobe-chat
-[fossa-license-shield]: https://app.fossa.com/api/projects/git%2Bgithub.com%2Flobehub%2Flobe-chat.svg?type=large
-[github-action-release-link]: https://github.com/actions/workflows/lobehub/lobe-chat/release.yml
-[github-action-release-shield]: https://img.shields.io/github/actions/workflow/status/lobehub/lobe-chat/release.yml?label=release&labelColor=black&logo=githubactions&logoColor=white&style=flat-square
-[github-action-test-link]: https://github.com/actions/workflows/lobehub/lobe-chat/test.yml
-[github-action-test-shield]: https://img.shields.io/github/actions/workflow/status/lobehub/lobe-chat/test.yml?label=test&labelColor=black&logo=githubactions&logoColor=white&style=flat-square
-[github-contributors-link]: https://github.com/lobehub/lobe-chat/graphs/contributors
-[github-contributors-shield]: https://img.shields.io/github/contributors/lobehub/lobe-chat?color=c4f042&labelColor=black&style=flat-square
-[github-forks-link]: https://github.com/lobehub/lobe-chat/network/members
-[github-forks-shield]: https://img.shields.io/github/forks/lobehub/lobe-chat?color=8ae8ff&labelColor=black&style=flat-square
-[github-issues-link]: https://github.com/lobehub/lobe-chat/issues
-[github-issues-shield]: https://img.shields.io/github/issues/lobehub/lobe-chat?color=ff80eb&labelColor=black&style=flat-square
-[github-license-link]: https://github.com/lobehub/lobe-chat/blob/main/LICENSE
-[github-license-shield]: https://img.shields.io/github/license/lobehub/lobe-chat?color=white&labelColor=black&style=flat-square
-[github-project-link]: https://github.com/lobehub/lobe-chat/projects
-[github-release-link]: https://github.com/lobehub/lobe-chat/releases
-[github-release-shield]: https://img.shields.io/github/v/release/lobehub/lobe-chat?color=369eff&labelColor=black&logo=github&style=flat-square
-[github-releasedate-link]: https://github.com/lobehub/lobe-chat/releases
-[github-releasedate-shield]: https://img.shields.io/github/release-date/lobehub/lobe-chat?labelColor=black&style=flat-square
-[github-stars-link]: https://github.com/lobehub/lobe-chat/network/stargazers
-[github-stars-shield]: https://img.shields.io/github/stars/lobehub/lobe-chat?color=ffcb47&labelColor=black&style=flat-square
-[github-wiki-link]: https://github.com/lobehub/lobe-chat/wiki
-[issues-link]: https://img.shields.io/github/issues/lobehub/lobe-chat.svg?style=flat
-[lobe-assets-github]: https://github.com/lobehub/lobe-assets
-[lobe-chat-plugins]: https://github.com/lobehub/lobe-chat-plugins
-[lobe-commit]: https://github.com/lobehub/lobe-commit/tree/master/packages/lobe-commit
-[lobe-i18n]: https://github.com/lobehub/lobe-commit/tree/master/packages/lobe-i18n
-[lobe-lint-github]: https://github.com/lobehub/lobe-lint
-[lobe-lint-link]: https://www.npmjs.com/package/@lobehub/lint
-[lobe-lint-shield]: https://img.shields.io/npm/v/@lobehub/lint?color=369eff&labelColor=black&logo=npm&logoColor=white&style=flat-square
-[lobe-theme]: https://github.com/lobehub/sd-webui-lobe-theme
-[lobe-tts-github]: https://github.com/lobehub/lobe-tts
-[lobe-tts-link]: https://www.npmjs.com/package/@lobehub/tts
-[lobe-tts-shield]: https://img.shields.io/npm/v/@lobehub/tts?color=369eff&labelColor=black&logo=npm&logoColor=white&style=flat-square
-[lobe-ui-github]: https://github.com/lobehub/lobe-ui
-[lobe-ui-link]: https://www.npmjs.com/package/@lobehub/ui
-[lobe-ui-shield]: https://img.shields.io/npm/v/@lobehub/ui?color=369eff&labelColor=black&logo=npm&logoColor=white&style=flat-square
-[pr-welcome-link]: https://github.com/lobehub/lobe-chat/pulls
-[pr-welcome-shield]: https://img.shields.io/badge/🤯_pr_welcome-%E2%86%92-ffcb47?labelColor=black&style=for-the-badge
-[profile-link]: https://github.com/lobehub
-[share-reddit-link]: https://www.reddit.com/submit?title=Check%20this%20GitHub%20repository%20out%20%F0%9F%A4%AF%20LobeChat%20-%20An%20open-source%2C%20extensible%20%28Function%20Calling%29%2C%20high-performance%20chatbot%20framework.%20It%20supports%20one-click%20free%20deployment%20of%20your%20private%20ChatGPT%2FLLM%20web%20application.%20%23chatbot%20%23chatGPT%20%23openAI&url=https%3A%2F%2Fgithub.com%2Flobehub%2Flobe-chat
-[share-reddit-shield]: https://img.shields.io/badge/-share%20on%20reddit-black?labelColor=black&logo=reddit&logoColor=white&style=flat-square
-[share-telegram-link]: https://t.me/share/url"?text=Check%20this%20GitHub%20repository%20out%20%F0%9F%A4%AF%20LobeChat%20-%20An%20open-source%2C%20extensible%20%28Function%20Calling%29%2C%20high-performance%20chatbot%20framework.%20It%20supports%20one-click%20free%20deployment%20of%20your%20private%20ChatGPT%2FLLM%20web%20application.%20%23chatbot%20%23chatGPT%20%23openAI&url=https%3A%2F%2Fgithub.com%2Flobehub%2Flobe-chat
-[share-telegram-shield]: https://img.shields.io/badge/-share%20on%20telegram-black?labelColor=black&logo=telegram&logoColor=white&style=flat-square
-[share-weibo-link]: http://service.weibo.com/share/share.php?sharesource=weibo&title=Check%20this%20GitHub%20repository%20out%20%F0%9F%A4%AF%20LobeChat%20-%20An%20open-source%2C%20extensible%20%28Function%20Calling%29%2C%20high-performance%20chatbot%20framework.%20It%20supports%20one-click%20free%20deployment%20of%20your%20private%20ChatGPT%2FLLM%20web%20application.%20%23chatbot%20%23chatGPT%20%23openAI&url=https%3A%2F%2Fgithub.com%2Flobehub%2Flobe-chat
-[share-weibo-shield]: https://img.shields.io/badge/-share%20on%20weibo-black?labelColor=black&logo=sinaweibo&logoColor=white&style=flat-square
-[share-whatsapp-link]: https://api.whatsapp.com/send?text=Check%20this%20GitHub%20repository%20out%20%F0%9F%A4%AF%20LobeChat%20-%20An%20open-source%2C%20extensible%20%28Function%20Calling%29%2C%20high-performance%20chatbot%20framework.%20It%20supports%20one-click%20free%20deployment%20of%20your%20private%20ChatGPT%2FLLM%20web%20application.%20https%3A%2F%2Fgithub.com%2Flobehub%2Flobe-chat%20%23chatbot%20%23chatGPT%20%23openAI
-[share-whatsapp-shield]: https://img.shields.io/badge/-share%20on%20whatsapp-black?labelColor=black&logo=whatsapp&logoColor=white&style=flat-square
-[share-x-link]: https://x.com/intent/tweet?hashtags=chatbot%2CchatGPT%2CopenAI&text=Check%20this%20GitHub%20repository%20out%20%F0%9F%A4%AF%20LobeChat%20-%20An%20open-source%2C%20extensible%20%28Function%20Calling%29%2C%20high-performance%20chatbot%20framework.%20It%20supports%20one-click%20free%20deployment%20of%20your%20private%20ChatGPT%2FLLM%20web%20application.&url=https%3A%2F%2Fgithub.com%2Flobehub%2Flobe-chat
-[share-x-shield]: https://img.shields.io/badge/-share%20on%20x-black?labelColor=black&logo=x&logoColor=white&style=flat-square
-[sponsor-link]: https://opencollective.com/lobehub 'Become 🩷 LobeHub Sponsor'
-[sponsor-shield]: https://img.shields.io/badge/-Sponsor%20LobeHub-f04f88?logo=opencollective&logoColor=white&style=flat-square
-[submit-agents-link]: https://github.com/lobehub/lobe-chat-agents
-[submit-agents-shield]: https://img.shields.io/badge/🤖/🏪_submit_agent-%E2%86%92-c4f042?labelColor=black&style=for-the-badge
-[submit-plugin-link]: https://github.com/lobehub/lobe-chat-plugins
-[submit-plugin-shield]: https://img.shields.io/badge/🧩/🏪_submit_plugin-%E2%86%92-95f3d9?labelColor=black&style=for-the-badge
-[vercel-link]: https://chat-preview.lobehub.com
-[vercel-shield]: https://img.shields.io/website?down_message=offline&label=vercel&labelColor=black&logo=vercel&style=flat-square&up_message=online&url=https%3A%2F%2Fchat-preview.lobehub.com
-[vercel-shield-badge]: https://img.shields.io/website?down_message=offline&label=try%20lobechat&labelColor=black&logo=vercel&style=for-the-badge&up_message=online&url=https%3A%2F%2Fchat-preview.lobehub.com
+</article></div>
